@@ -6,11 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="/storybooks-bangladesh/favicon.ico?v=3" />
 	<title>Sakima's song - Storybooks Bangladesh</title>
-	<meta name="description" content="Storybooks Bangladesh is designed specifically for teachers and makes 40 stories from the African Storybook available in English and French, as well as the major immigrant and refugee languages of Bangladesh (with text and audio in Bengali, English, Arabic, and many other languages).
+	<meta name="description" content="Storybooks Bangladesh is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available with text and audio in Bengali as well as the most widely spoken languages of Bangladesh (with text and audio in Bengali, English, French, Arabic, and many other languages).
 ">
 	<link rel="stylesheet" href="/storybooks-bangladesh/css/spectre.min.css">
-	<link rel="canonical" href="https://global-asp.github.io/storybooks-bangladesh//stories/en/0315/">
-	<link rel="alternate" type="application/rss+xml" title="Storybooks Bangladesh" href="https://global-asp.github.io/storybooks-bangladesh//storybooks-bangladesh/feed.xml">
+	<link rel="stylesheet" href="/storybooks-bangladesh/css/fontello.min.css">
+	<link rel="canonical" href="https://global-asp.github.io//storybooks-bangladesh/stories/en/0315/">
+	<link rel="alternate" type="application/rss+xml" title="Storybooks Bangladesh" href="/storybooks-bangladesh">
 	<script src="/storybooks-bangladesh/js/sbc.js"></script>
 </head>
 
@@ -24,10 +25,10 @@
 			<object type="image/svg+xml" data="/storybooks-bangladesh/images/sbbd_logo.svg" width="100" height="100" border="0"></object>
 		</a>
 		<div class="btn-group btn-group-block">
-			<a href="/" class="btn btn-primary">Home</a>
-			<a href="/about.html" class="btn btn-primary">About us</a>
-			<a href="/how-to.html" class="btn btn-primary">How to use this website</a>
-			<a href="/contact.html" class="btn btn-primary">Contact us</a>
+			<a href="/storybooks-bangladesh/" class="btn btn-primary">Home</a>
+			<a href="/storybooks-bangladesh/about.html" class="btn btn-primary">About us</a>
+			<a href="/storybooks-bangladesh/how-to.html" class="btn btn-primary">How to use this website</a>
+			<a href="/storybooks-bangladesh/contact.html" class="btn btn-primary">Contact us</a>
 		</div>
 	</section>
 </header>
@@ -52,9 +53,9 @@
 <span class="en">Sakima's song</span>
 <span class="bn">স্যাকিমার গান</span>
 			<div class="btn-group">
-				<a href="#text02" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
-				<button class=" btn btn-lg" onclick="playpause('')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
-				<audio id="audio" src="http://storybookscanada.ca/audio/en/0315/mp3/01.mp3"></audio>
+				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/en/0315/mp3/01.mp3"></audio>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-bangladesh/css/pencil.svg" alt="Written by" width="38px"></span> Ursula Nafula</h3>
@@ -62,7 +63,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-bangladesh/css/megaphone.svg" alt="Read by" width="38px"></span> Darshan Soni</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-bangladesh/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-bangladesh/stories/en">English</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-bangladesh/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-bangladesh/stories/en/level3">Level 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-bangladesh/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://storybookscanada.ca/audio/en/0315/0315.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-bangladesh/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/en/0315/0315.mp3" type="audio/mpeg"></audio></h3>
 	</div>
 </div>
 <hr>
@@ -89,10 +90,10 @@ Their grass-thatched hut was at the end of a row of trees.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text01" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio02" src="http://globalstorybooks.net/media/audio/en/0315/mp3/02.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('02')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -121,10 +122,10 @@ Sakima was a talented boy.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text02" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio03" src="http://globalstorybooks.net/media/audio/en/0315/mp3/03.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('03')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -153,10 +154,10 @@ For example, he could sit with older members of the village and discuss importan
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio04" src="http://globalstorybooks.net/media/audio/en/0315/mp3/04.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('04')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -178,7 +179,7 @@ Sakima was left with his little sister.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt bn"><h3>
-	স্যাকিমার মাবাবা ধনী লোকটির বাড়িতে কাজ করতেন। তাঁরা ভোরে বাড়ি থেকে বের হতেন এবং সন্ধ্যায় দেরীতে বাড়ি ফিরতেন। স্যাকিমাকে তার বোনের সাথে রেখে যেতেন।
+	স্যাকিমার মা-বাবা ধনী লোকটির বাড়িতে কাজ করতেন। তাঁরা ভোরে বাড়ি থেকে বের হতেন এবং সন্ধ্যায় দেরীতে বাড়ি ফিরতেন। স্যাকিমাকে তার বোনের সাথে রেখে যেতেন।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt en"><h3>
 	The parents of Sakima worked at the rich man's house.
@@ -189,10 +190,10 @@ Sakima was left with his little sister.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio05" src="http://globalstorybooks.net/media/audio/en/0315/mp3/05.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('05')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -221,10 +222,10 @@ One day his mother asked him, "Where do you learn these songs from, Sakima?"
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio06" src="http://globalstorybooks.net/media/audio/en/0315/mp3/06.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('06')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -249,10 +250,10 @@ One day his mother asked him, "Where do you learn these songs from, Sakima?"
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio07" src="http://globalstorybooks.net/media/audio/en/0315/mp3/07.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('07')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -285,10 +286,10 @@ She would sway to the soothing tune.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text09" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio08" src="http://globalstorybooks.net/media/audio/en/0315/mp3/08.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('08')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -308,7 +309,7 @@ Sakima would accept and sing it over and over again.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt bn"><h3>
-	"তুমি কি এটি বারবার গাইতে পার, স্যাকিমা," তার বোন তাকে অনুরোধ করত। স্যাকিমা তা  মেনে নিয়ে বারবার গাইতে থাকত।
+	"তুমি কি এটি বারবার গাইতে পার, স্যাকিমা," তার বোন তাকে অনুরোধ করত। স্যাকিমা তা মেনে নিয়ে বারবার গাইতে থাকত।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt en"><h3>
 	"Can you sing it again and again, Sakima," his sister would beg him.
@@ -317,10 +318,10 @@ Sakima would accept and sing it over and over again.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text10" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio09" src="http://globalstorybooks.net/media/audio/en/0315/mp3/09.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('09')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -340,7 +341,7 @@ Sakima knew that there was something wrong.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt bn"><h3>
-	একদিন সন্ধ্যায় যখন তার মাবাবা বাড়ি ফিরলেন, তারা অনেক শান্ত হয়ে ছিলেন। স্যাকিমা বুঝতে পেরেছিল যে কোনও খারাপ কিছু হয়েছে।
+	একদিন সন্ধ্যায় যখন তার মা-বাবা বাড়ি ফিরলেন, তারা অনেক শান্ত হয়ে ছিলেন। স্যাকিমা বুঝতে পেরেছিল যে কোনও খারাপ কিছু হয়েছে।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt en"><h3>
 	One evening when his parents returned home, they were very quiet.
@@ -349,10 +350,10 @@ Sakima knew that there was something wrong.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text09" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text11" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio10" src="http://globalstorybooks.net/media/audio/en/0315/mp3/10.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('10')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -385,10 +386,10 @@ The man was very sad and lonely.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text10" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text12" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text12" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio11" src="http://globalstorybooks.net/media/audio/en/0315/mp3/11.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('11')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -410,7 +411,7 @@ But his parents dismissed him.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt bn"><h3>
-	"আমি তার জন্য গাইতে পারি। তিনি আবার খুশি হতে পারেন," স্যাকিমা তার মাবাবাকে বলল। কিন্তু তার মাবাবা তাকে মানা করলেন। "তিনি অনেক ধনী। তুমি কেবল একজন অন্ধ ছেলে। তুমি কি মনে কর যে তোমার গান তাঁকে সাহায্য করবে?"
+	"আমি তার জন্য গাইতে পারি। তিনি আবার খুশি হতে পারেন," স্যাকিমা তার মা-বাবাকে বলল। কিন্তু তার মা-বাবা তাকে মানা করলেন। "তিনি অনেক ধনী। তুমি কেবল একজন অন্ধ ছেলে। তুমি কি মনে কর যে তোমার গান তাঁকে সাহায্য করবে?"
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt en"><h3>
 	"I can sing for him. He might be happy again," Sakima told his parents.
@@ -421,10 +422,10 @@ But his parents dismissed him.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text11" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text13" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text11" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text13" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio12" src="http://globalstorybooks.net/media/audio/en/0315/mp3/12.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('12')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -446,7 +447,7 @@ She said, "Sakima's songs soothe me when I am hungry. They will soothe the rich 
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt bn"><h3>
-	যাইহোক, স্যাকিমা হাল ছাড়েনি। তার ছোট বোন তাকে সমর্থন করল। সে বলল, "আমি যখন ক্ষুধার্ত থাকি, তখন স্যাকিমার গানগুলি আমাকে সান্ত্বনা দেয়। এগুলো ধনী ব্যক্তিকেও সান্ত্বনা দেবে।"
+	যাইহোক, স্যাকিমা হাল ছাড়েনি। তার ছোট বোন তাকে সমর্থন করল। সে বলল, "আমি যখন ক্ষুধার্ত থাকি, তখন স্যাকিমার গানগুলো আমাকে সান্ত্বনা দেয়। এগুলো ধনী ব্যক্তিকেও সান্ত্বনা দেবে।"
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt en"><h3>
 	However, Sakima did not give up.
@@ -457,10 +458,10 @@ She said, "Sakima's songs soothe me when I am hungry. They will soothe the rich 
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text12" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text14" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text12" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text14" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio13" src="http://globalstorybooks.net/media/audio/en/0315/mp3/13.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('13')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -485,10 +486,10 @@ She said, "Sakima's songs soothe me when I am hungry. They will soothe the rich 
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text13" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text15" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text13" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text15" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio14" src="http://globalstorybooks.net/media/audio/en/0315/mp3/14.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('14')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -517,10 +518,10 @@ Slowly, the head of the rich man began to show through the big window.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text14" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text16" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text14" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text16" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio15" src="http://globalstorybooks.net/media/audio/en/0315/mp3/15.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('15')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton15" onclick="playpause('15')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -540,7 +541,7 @@ But one man said, "Nobody has been able to console the boss. Does this blind boy
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt bn"><h3>
-	শ্রমিকেরা যা করছিল তা বন্ধ করল। তারা স্যাকিমার সুন্দর গান শুনছিল। কিন্তু এক ব্যক্তি বলল, "কেউই মনিবকে সান্ত্বনা দিতে পারেনি। এই অন্ধ ছেলে কি মনে করে যে সে তাঁকে সান্ত্বনা দেবে?"
+	শ্রমিকেরা যা করছিল তা বন্ধ করল। তারা স্যাকিমার সুন্দর গান শুনছিল। কিন্তু এক ব্যক্তি বলল, "কেউই মনিবকে সান্ত্বনা দিতে পারেনি। এই অন্ধ ছেলে কি মনে করে যে সে তাঁকে সান্ত্বনা দিতে পারবে?"
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt en"><h3>
 	The workers stopped what they were doing. They listened to Sakima's beautiful song.
@@ -549,10 +550,10 @@ But one man said, "Nobody has been able to console the boss. Does this blind boy
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text15" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text17" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text15" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text17" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio16" src="http://globalstorybooks.net/media/audio/en/0315/mp3/16.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('16')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton16" onclick="playpause('16')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -581,10 +582,10 @@ But the rich man rushed out and said, "Please sing again."
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text16" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text18" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text16" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text18" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio17" src="http://globalstorybooks.net/media/audio/en/0315/mp3/17.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('17')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton17" onclick="playpause('17')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -613,10 +614,10 @@ They had found the rich man's son beaten up and left on the side of the road.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text17" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text19" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text17" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text19" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio18" src="http://globalstorybooks.net/media/audio/en/0315/mp3/18.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('18')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton18" onclick="playpause('18')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -649,10 +650,10 @@ He took his son and Sakima to hospital so Sakima could regain his sight.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text18" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#colophon" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Story credits" width="16px"></a>
+		<a href="#text18" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#colophon" class="btn btn-lg" title="Story credits"><i class="icon-arrow-down"></i></a>
 		<audio id="audio19" src="http://globalstorybooks.net/media/en/0315/mp3/19.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('19')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton19" onclick="playpause('19')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>

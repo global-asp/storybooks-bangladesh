@@ -6,11 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="/storybooks-bangladesh/favicon.ico?v=3" />
 	<title>দাদীমার কলা - Storybooks Bangladesh</title>
-	<meta name="description" content="Storybooks Bangladesh is designed specifically for teachers and makes 40 stories from the African Storybook available in English and French, as well as the major immigrant and refugee languages of Bangladesh (with text and audio in Bengali, English, Arabic, and many other languages).
+	<meta name="description" content="Storybooks Bangladesh is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available with text and audio in Bengali as well as the most widely spoken languages of Bangladesh (with text and audio in Bengali, English, French, Arabic, and many other languages).
 ">
 	<link rel="stylesheet" href="/storybooks-bangladesh/css/spectre.min.css">
-	<link rel="canonical" href="https://global-asp.github.io/storybooks-bangladesh//stories/bn/0294/">
-	<link rel="alternate" type="application/rss+xml" title="Storybooks Bangladesh" href="https://global-asp.github.io/storybooks-bangladesh//storybooks-bangladesh/feed.xml">
+	<link rel="stylesheet" href="/storybooks-bangladesh/css/fontello.min.css">
+	<link rel="canonical" href="https://global-asp.github.io//storybooks-bangladesh/stories/bn/0294/">
+	<link rel="alternate" type="application/rss+xml" title="Storybooks Bangladesh" href="/storybooks-bangladesh">
 	<script src="/storybooks-bangladesh/js/sbc.js"></script>
 </head>
 
@@ -24,10 +25,10 @@
 			<object type="image/svg+xml" data="/storybooks-bangladesh/images/sbbd_logo.svg" width="100" height="100" border="0"></object>
 		</a>
 		<div class="btn-group btn-group-block">
-			<a href="/" class="btn btn-primary">Home</a>
-			<a href="/about.html" class="btn btn-primary">About us</a>
-			<a href="/how-to.html" class="btn btn-primary">How to use this website</a>
-			<a href="/contact.html" class="btn btn-primary">Contact us</a>
+			<a href="/storybooks-bangladesh/" class="btn btn-primary">Home</a>
+			<a href="/storybooks-bangladesh/about.html" class="btn btn-primary">About us</a>
+			<a href="/storybooks-bangladesh/how-to.html" class="btn btn-primary">How to use this website</a>
+			<a href="/storybooks-bangladesh/contact.html" class="btn btn-primary">Contact us</a>
 		</div>
 	</section>
 </header>
@@ -52,9 +53,9 @@
 <span class="en">Grandma's bananas</span>
 <span class="bn">দাদীমার কলা</span>
 			<div class="btn-group">
-				<a href="#text02" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
-				<button class=" btn btn-lg" onclick="playpause('')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
-				<audio id="audio" src="http://storybookscanada.ca/audio/bn/0294/mp3/01.mp3"></audio>
+				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/bn/0294/mp3/01.mp3"></audio>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-bangladesh/css/pencil.svg" alt="Written by" width="38px"></span> Ursula Nafula</h3>
@@ -62,7 +63,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-bangladesh/css/global.svg" alt="Translated by" width="38px"></span> Asma Afreen</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-bangladesh/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-bangladesh/stories/bn">Bengali</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-bangladesh/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-bangladesh/stories/bn/level4">Level 4</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-bangladesh/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://storybookscanada.ca/audio/bn/0294/0294.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-bangladesh/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/bn/0294/0294.mp3" type="audio/mpeg"></audio></h3>
 	</div>
 </div>
 <hr>
@@ -70,11 +71,11 @@
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	দাদীমার জোয়ার, বাজরা এবং কাসাভা পূর্ণ চমৎকার একটি বাগান ছিল। কিন্তু সব থেকে ভাল ছিল কলা। যদিও দাদীমার অনেক নাতিনাতনি ছিল, আমি গোপনে গোপনে জানতাম যে আমি তাঁর সবচেয়ে প্রিয়। তিনি আমাকে প্রায়ই তাঁর বাড়িতে আমন্ত্রণ জানাতেন। তিনি আমার সাথে ছোট ছোট গোপন কথাগুলোও বলতেন। কিন্তু একটি গোপন কথা তিনি আমাকে বলেননি, তা হল তিনি কোথায় কলা পাকাতেন।
+	দাদীমার চমৎকার একটি বাগান ছিল যেটি জোয়ার, বাজরা এবং কাসাভা পূর্ণ ছিল। কিন্তু সব থেকে ভাল ছিল কলা। যদিও দাদীমার অনেক নাতিনাতনি ছিল, আমি গোপনে গোপনে জানতাম যে আমি তাঁর সবচেয়ে প্রিয়। তিনি আমাকে প্রায়ই তাঁর বাড়িতে আমন্ত্রণ জানাতেন। তিনি আমার সাথে ছোট ছোট গোপন কথাগুলোও বলতেন। কিন্তু একটি গোপন কথা তিনি আমাকে বলেননি, তা হল তিনি কোথায় কলা পাকাতেন।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
-	দাদীমার জোয়ার, বাজরা এবং কাসাভা পূর্ণ চমৎকার একটি বাগান ছিল। কিন্তু সব থেকে ভাল ছিল কলা। যদিও দাদীমার অনেক নাতিনাতনি ছিল, আমি গোপনে গোপনে জানতাম যে আমি তাঁর সবচেয়ে প্রিয়। তিনি আমাকে প্রায়ই তাঁর বাড়িতে আমন্ত্রণ জানাতেন। তিনি আমার সাথে ছোট ছোট গোপন কথাগুলোও বলতেন। কিন্তু একটি গোপন কথা তিনি আমাকে বলেননি, তা হল তিনি কোথায় কলা পাকাতেন।
+	দাদীমার চমৎকার একটি বাগান ছিল যেটি জোয়ার, বাজরা এবং কাসাভা পূর্ণ ছিল। কিন্তু সব থেকে ভাল ছিল কলা। যদিও দাদীমার অনেক নাতিনাতনি ছিল, আমি গোপনে গোপনে জানতাম যে আমি তাঁর সবচেয়ে প্রিয়। তিনি আমাকে প্রায়ই তাঁর বাড়িতে আমন্ত্রণ জানাতেন। তিনি আমার সাথে ছোট ছোট গোপন কথাগুলোও বলতেন। কিন্তু একটি গোপন কথা তিনি আমাকে বলেননি, তা হল তিনি কোথায় কলা পাকাতেন।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
 	Grandma's garden was wonderful, full of sorghum, millet, and cassava.
@@ -87,10 +88,10 @@ But there was one secret she did not share with me: where she ripened bananas.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text01" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio02" src="http://globalstorybooks.net/media/audio/bn/0294/mp3/02.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('02')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
@@ -117,10 +118,10 @@ Next to the basket, there were several banana leaves that Grandma turned from ti
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text02" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio03" src="http://globalstorybooks.net/media/audio/bn/0294/mp3/03.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('03')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
@@ -134,11 +135,11 @@ Next to the basket, there were several banana leaves that Grandma turned from ti
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	দাদীমাকে, কলাপাতাগুলোকে, এবং বড় খড়ের ঝুড়িটিকে দেখতে আমার অনেক আকর্ষণীও লাগছিল। কিন্তু দাদীমা আমাকে একটি কাজ করার জন্য মার কাছে পাঠিয়ে দিলেন। "দাদীমা, অনুগ্রহ করে আমাকে এটি প্রস্তুত করা দেখতে দিন..." "জিদ করোনা বাচ্চা, তোমাকে যা করতে বলা হয়েছে তা কর," তিনি জোর দিয়ে বললেন। আমি দৌড় দিলাম।
+	দাদীমাকে, কলাপাতাগুলোকে, এবং বড় খড়ের ঝুড়িটিকে দেখতে আমার অনেক আকর্ষণীয় লাগছিল। কিন্তু দাদীমা আমাকে একটি কাজ করার জন্য মার কাছে পাঠিয়ে দিলেন। "দাদীমা, অনুগ্রহ করে আমাকে এটি প্রস্তুত করা দেখতে দিন..." "জিদ করোনা বাচ্চা, তোমাকে যা করতে বলা হয়েছে তা কর," তিনি জোর দিয়ে বললেন। আমি দৌড় দিলাম।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
-	দাদীমাকে, কলাপাতাগুলোকে, এবং বড় খড়ের ঝুড়িটিকে দেখতে আমার অনেক আকর্ষণীও লাগছিল। কিন্তু দাদীমা আমাকে একটি কাজ করার জন্য মার কাছে পাঠিয়ে দিলেন। "দাদীমা, অনুগ্রহ করে আমাকে এটি প্রস্তুত করা দেখতে দিন..." "জিদ করোনা বাচ্চা, তোমাকে যা করতে বলা হয়েছে তা কর," তিনি জোর দিয়ে বললেন। আমি দৌড় দিলাম।
+	দাদীমাকে, কলাপাতাগুলোকে, এবং বড় খড়ের ঝুড়িটিকে দেখতে আমার অনেক আকর্ষণীয় লাগছিল। কিন্তু দাদীমা আমাকে একটি কাজ করার জন্য মার কাছে পাঠিয়ে দিলেন। "দাদীমা, অনুগ্রহ করে আমাকে এটি প্রস্তুত করা দেখতে দিন..." "জিদ করোনা বাচ্চা, তোমাকে যা করতে বলা হয়েছে তা কর," তিনি জোর দিয়ে বললেন। আমি দৌড় দিলাম।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
 	It was so interesting watching Grandma, the bananas, the banana leaves and the big straw basket. But Grandma sent me off to my mother on an errand.
@@ -149,10 +150,10 @@ Next to the basket, there were several banana leaves that Grandma turned from ti
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio04" src="http://globalstorybooks.net/media/audio/bn/0294/mp3/04.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('04')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
@@ -166,11 +167,11 @@ Next to the basket, there were several banana leaves that Grandma turned from ti
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	যখন আমি ফিরলাম, দাদীমা বাহিরে বসে ছিলেন, কিন্তু তাঁর সাথে না ঝুড়ি ছিল না কলা। "দাদীমা, ঝুড়িটি কোথায়, কলাগুলো কোথায়, এবং কোথায়..." কিন্তু আমি শুধু একটি উত্তর পেলাম, "ওগুলি আমার যাদুর স্থানে রাখা আছে।" এটি খুব হতাশাজনক ছিল!
+	যখন আমি ফিরলাম, দাদীমা বাহিরে বসে ছিলেন, কিন্তু তাঁর সাথে না ঝুড়ি ছিল না কলা। "দাদীমা, ঝুড়িটি কোথায়, কলাগুলো কোথায়, এবং কোথায়..." কিন্তু আমি শুধু একটি উত্তর পেলাম, "ওগুলি আমার যাদুর স্থানে রাখা আছে।" এটি খুবই হতাশাজনক ছিল!
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
-	যখন আমি ফিরলাম, দাদীমা বাহিরে বসে ছিলেন, কিন্তু তাঁর সাথে না ঝুড়ি ছিল না কলা। "দাদীমা, ঝুড়িটি কোথায়, কলাগুলো কোথায়, এবং কোথায়..." কিন্তু আমি শুধু একটি উত্তর পেলাম, "ওগুলি আমার যাদুর স্থানে রাখা আছে।" এটি খুব হতাশাজনক ছিল!
+	যখন আমি ফিরলাম, দাদীমা বাহিরে বসে ছিলেন, কিন্তু তাঁর সাথে না ঝুড়ি ছিল না কলা। "দাদীমা, ঝুড়িটি কোথায়, কলাগুলো কোথায়, এবং কোথায়..." কিন্তু আমি শুধু একটি উত্তর পেলাম, "ওগুলি আমার যাদুর স্থানে রাখা আছে।" এটি খুবই হতাশাজনক ছিল!
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
 	When I returned, Grandma was sitting outside but with neither the basket nor the bananas.
@@ -181,10 +182,10 @@ But the only answer I got was, "They are in my magic place." It was so disappoin
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio05" src="http://globalstorybooks.net/media/audio/bn/0294/mp3/05.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('05')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
@@ -211,10 +212,10 @@ As soon as I opened the door, I was welcomed by the strong smell of ripening ban
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio06" src="http://globalstorybooks.net/media/audio/bn/0294/mp3/06.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('06')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
@@ -228,11 +229,11 @@ As soon as I opened the door, I was welcomed by the strong smell of ripening ban
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	দাদীমার কণ্ঠস্বর আমাকে হকচকিয়ে দিল যখন তিনি  আমাকে ডাকলেন, "তুমি কি করছ? জলদি করে আমার ছড়ি নিয়ে আস।" আমি তাঁর ছড়ি নিয়ে তড়িঘড়ি করে বাহিরে গেলাম। "তুমি কেন হাসছ?" দাদীমা জিজ্ঞেস করলেন। দাদীমার প্রশ্ন আমাকে উপলব্ধি করাল যে আমি তাঁর যাদুর স্থানের সন্ধান পাওয়াতে তখনো হেসে যাচ্ছিলাম।
+	দাদীমার কণ্ঠস্বর আমাকে হকচকিয়ে দিল যখন তিনি আমাকে ডাকলেন, "তুমি কি করছ? জলদি করে আমার ছড়ি নিয়ে আস।" আমি তাঁর ছড়ি নিয়ে তড়িঘড়ি করে বাহিরে গেলাম। "তুমি কেন হাসছ?" দাদীমা জিজ্ঞেস করলেন। দাদীমার প্রশ্ন আমাকে উপলব্ধি করাল যে আমি তাঁর যাদুর স্থানের সন্ধান পাওয়াতে তখনো হেসে যাচ্ছিলাম।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
-	দাদীমার কণ্ঠস্বর আমাকে হকচকিয়ে দিল যখন তিনি  আমাকে ডাকলেন, "তুমি কি করছ? জলদি করে আমার ছড়ি নিয়ে আস।" আমি তাঁর ছড়ি নিয়ে তড়িঘড়ি করে বাহিরে গেলাম। "তুমি কেন হাসছ?" দাদীমা জিজ্ঞেস করলেন। দাদীমার প্রশ্ন আমাকে উপলব্ধি করাল যে আমি তাঁর যাদুর স্থানের সন্ধান পাওয়াতে তখনো হেসে যাচ্ছিলাম।
+	দাদীমার কণ্ঠস্বর আমাকে হকচকিয়ে দিল যখন তিনি আমাকে ডাকলেন, "তুমি কি করছ? জলদি করে আমার ছড়ি নিয়ে আস।" আমি তাঁর ছড়ি নিয়ে তড়িঘড়ি করে বাহিরে গেলাম। "তুমি কেন হাসছ?" দাদীমা জিজ্ঞেস করলেন। দাদীমার প্রশ্ন আমাকে উপলব্ধি করাল যে আমি তাঁর যাদুর স্থানের সন্ধান পাওয়াতে তখনো হেসে যাচ্ছিলাম।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
 	Grandma's voice startled me when she called, "What are you doing? Hurry up and bring me the stick."
@@ -243,10 +244,10 @@ Her question made me realise that I was still smiling at the discovery of her ma
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio07" src="http://globalstorybooks.net/media/audio/bn/0294/mp3/07.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('07')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
@@ -273,10 +274,10 @@ There was a bunch of very ripe ones. I picked one and hid it in my dress. After 
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text09" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio08" src="http://globalstorybooks.net/media/audio/bn/0294/mp3/08.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('08')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
@@ -305,10 +306,10 @@ As I tiptoed towards the door, I heard grandma coughing outside. I just managed 
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text10" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio09" src="http://globalstorybooks.net/media/audio/bn/0294/mp3/09.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('09')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
@@ -335,10 +336,10 @@ I did not hurry to visit her that day. But I could not avoid her for long.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text09" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text11" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio10" src="http://globalstorybooks.net/media/audio/bn/0294/mp3/10.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('10')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
@@ -352,11 +353,11 @@ I did not hurry to visit her that day. But I could not avoid her for long.
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
-	ওইদিন সন্ধ্যায় আমাকে আমার মা, বাবা আর দাদীমা ডেকে পাঠালেন। আমি জানতাম কেন। সেইদিন রাতে যখন আমি ঘুমাবার জন্য শুয়ে পড়লাম, আমি জানতাম আমি আর কখনও চুরি করতে পারব না, দাদীমার থেকে না, বাবামার থেকে না, এবং নিশ্চিতভাবে অন্য কারও থেকে না।
+	ওইদিন সন্ধ্যায় আমাকে আমার মা, বাবা আর দাদীমা ডেকে পাঠালেন। আমি জানতাম কেন। সেইদিন রাতে যখন আমি ঘুমাবার জন্য শুয়ে পড়লাম, আমি জানতাম আমি আর কখনো চুরি করতে পারব না, দাদীমার থেকে না, বাবামার থেকে না, এবং নিশ্চিতভাবে অন্য কারও থেকে না।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
-	ওইদিন সন্ধ্যায় আমাকে আমার মা, বাবা আর দাদীমা ডেকে পাঠালেন। আমি জানতাম কেন। সেইদিন রাতে যখন আমি ঘুমাবার জন্য শুয়ে পড়লাম, আমি জানতাম আমি আর কখনও চুরি করতে পারব না, দাদীমার থেকে না, বাবামার থেকে না, এবং নিশ্চিতভাবে অন্য কারও থেকে না।
+	ওইদিন সন্ধ্যায় আমাকে আমার মা, বাবা আর দাদীমা ডেকে পাঠালেন। আমি জানতাম কেন। সেইদিন রাতে যখন আমি ঘুমাবার জন্য শুয়ে পড়লাম, আমি জানতাম আমি আর কখনো চুরি করতে পারব না, দাদীমার থেকে না, বাবামার থেকে না, এবং নিশ্চিতভাবে অন্য কারও থেকে না।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
 	Later that evening I was called by my mother and father, and Grandma. I knew why.
@@ -365,10 +366,10 @@ That night as I lay down to sleep, I knew I could never steal again, not from gr
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text10" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#colophon" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Story credits" width="16px"></a>
+		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#colophon" class="btn btn-lg" title="Story credits"><i class="icon-arrow-down"></i></a>
 		<audio id="audio11" src="http://globalstorybooks.net/media/bn/0294/mp3/11.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('11')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
@@ -393,7 +394,7 @@ That night as I lay down to sleep, I knew I could never steal again, not from gr
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
 		<h5>Read more <a href="/stories/bn/level4">level 4</a> stories:</h5>
-			<label class="chip"><a href="/stories/bn/0243/">ছুটির দিনে দাদুর সাথে</a></label>
+			<label class="chip"><a href="/stories/bn/0243/">ছুটির দিনে দাদীমার সাথে</a></label>
 			<label class="chip"><a href="/stories/bn/0072/">হানিগাইড পাখির প্রতিশোধ</a></label>
 			<label class="chip"><a href="/stories/bn/0291/">ভুসির বোন যা বলল</a></label>
 	</div>

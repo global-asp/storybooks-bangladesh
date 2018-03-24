@@ -6,11 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="/storybooks-bangladesh/favicon.ico?v=3" />
 	<title>Magozwe - Storybooks Bangladesh</title>
-	<meta name="description" content="Storybooks Bangladesh is designed specifically for teachers and makes 40 stories from the African Storybook available in English and French, as well as the major immigrant and refugee languages of Bangladesh (with text and audio in Bengali, English, Arabic, and many other languages).
+	<meta name="description" content="Storybooks Bangladesh is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available with text and audio in Bengali as well as the most widely spoken languages of Bangladesh (with text and audio in Bengali, English, French, Arabic, and many other languages).
 ">
 	<link rel="stylesheet" href="/storybooks-bangladesh/css/spectre.min.css">
-	<link rel="canonical" href="https://global-asp.github.io/storybooks-bangladesh//stories/en/0262/">
-	<link rel="alternate" type="application/rss+xml" title="Storybooks Bangladesh" href="https://global-asp.github.io/storybooks-bangladesh//storybooks-bangladesh/feed.xml">
+	<link rel="stylesheet" href="/storybooks-bangladesh/css/fontello.min.css">
+	<link rel="canonical" href="https://global-asp.github.io//storybooks-bangladesh/stories/en/0262/">
+	<link rel="alternate" type="application/rss+xml" title="Storybooks Bangladesh" href="/storybooks-bangladesh">
 	<script src="/storybooks-bangladesh/js/sbc.js"></script>
 </head>
 
@@ -24,10 +25,10 @@
 			<object type="image/svg+xml" data="/storybooks-bangladesh/images/sbbd_logo.svg" width="100" height="100" border="0"></object>
 		</a>
 		<div class="btn-group btn-group-block">
-			<a href="/" class="btn btn-primary">Home</a>
-			<a href="/about.html" class="btn btn-primary">About us</a>
-			<a href="/how-to.html" class="btn btn-primary">How to use this website</a>
-			<a href="/contact.html" class="btn btn-primary">Contact us</a>
+			<a href="/storybooks-bangladesh/" class="btn btn-primary">Home</a>
+			<a href="/storybooks-bangladesh/about.html" class="btn btn-primary">About us</a>
+			<a href="/storybooks-bangladesh/how-to.html" class="btn btn-primary">How to use this website</a>
+			<a href="/storybooks-bangladesh/contact.html" class="btn btn-primary">Contact us</a>
 		</div>
 	</section>
 </header>
@@ -52,9 +53,9 @@
 <span class="en">Magozwe</span>
 <span class="bn">মাগোজওয়ে</span>
 			<div class="btn-group">
-				<a href="#text02" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
-				<button class=" btn btn-lg" onclick="playpause('')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
-				<audio id="audio" src="http://storybookscanada.ca/audio/en/0262/mp3/01.mp3"></audio>
+				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/en/0262/mp3/01.mp3"></audio>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-bangladesh/css/pencil.svg" alt="Written by" width="38px"></span> Lesley Koyi</h3>
@@ -62,7 +63,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-bangladesh/css/megaphone.svg" alt="Read by" width="38px"></span> Darshan Soni</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-bangladesh/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-bangladesh/stories/en">English</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-bangladesh/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-bangladesh/stories/en/level5">Level 5</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-bangladesh/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://storybookscanada.ca/audio/en/0262/0262.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-bangladesh/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/en/0262/0262.mp3" type="audio/mpeg"></audio></h3>
 	</div>
 </div>
 <hr>
@@ -89,10 +90,10 @@ Among the group of boys was Magozwe. He was the youngest.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text01" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio02" src="http://globalstorybooks.net/media/audio/en/0262/mp3/02.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('02')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -110,17 +111,17 @@ Among the group of boys was Magozwe. He was the youngest.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt bn"><h3>
-	মাগোজওয়ের বয়স যখন মাত্র পাঁচ বছর, তখন তার বাবামা মারা যায়। সে তার চাচার সাথে থাকার জন্য চলে গেল। এই লোকটি বাচ্চাটির কোনও খেয়াল রাখতেন না। তিনি মাগোজওয়েকে পর্যাপ্ত খাবার দিতেন না। তিনি ছেলেটিকে দিয়ে অনেক কঠোর পরিশ্রম করাতেন।
+	মাগোজওয়ের বয়স যখন মাত্র পাঁচ বছর, তখন তার বাবা-মা মারা যায়। সে তার চাচার সাথে থাকার জন্য চলে গেল। এই লোকটি বাচ্চাটির কোনও খেয়াল রাখতেন না। তিনি মাগোজওয়েকে পর্যাপ্ত খাবার দিতেন না। তিনি ছেলেটিকে দিয়ে কঠোর পরিশ্রম করাতেন।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt en"><h3>
 	When Magozwe's parents died, he was only five years old. He went to live with his uncle. This man did not care about the child. He did not give Magozwe enough food. He made the boy do a lot of hard work.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text02" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio03" src="http://globalstorybooks.net/media/audio/en/0262/mp3/03.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('03')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -140,7 +141,7 @@ After three years of this treatment Magozwe ran away from his uncle. He started 
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt bn"><h3>
-	যদি মাগোজওয়ে কোনও নালিশ অথবা প্রশ্ন করত, তার চাচা তাকে মারধর করত। যখন মাগোজওয়ে জিজ্ঞাসা করল যে সে কি স্কুলে যেতে পারবে কিনা, তখন তার চাচা তাকে মারল আর বলল, "তোর মত মূর্খ কিছু শিখতে পারবেনা।" এই ব্যবহারের তিন বছর পর, মাগোজওয়ে তার চাচার কাছ থেকে পালিয়ে গেল। সে রাস্তায় বাস করা শুরু করে দিল।
+	যদি মাগোজওয়ে কোনও নালিশ অথবা প্রশ্ন করত, তার চাচা তাকে মারধর করত। যখন মাগোজওয়ে জিজ্ঞাসা করল যে সে স্কুলে যেতে পারবে কিনা, তখন তার চাচা তাকে মারল আর বলল, "তোর মত মূর্খ কিছু শিখতে পারবেনা।" এই ব্যবহারের তিন বছর পর, মাগোজওয়ে তার চাচার কাছ থেকে পালিয়ে গেল। সে রাস্তায় বাস করা শুরু করে দিল।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt en"><h3>
 	If Magozwe complained or questioned, his uncle beat him. When Magozwe asked if he could go to school, his uncle beat him and said, "You're too stupid to learn anything."
@@ -149,10 +150,10 @@ After three years of this treatment Magozwe ran away from his uncle. He started 
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio04" src="http://globalstorybooks.net/media/audio/en/0262/mp3/04.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('04')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -174,7 +175,7 @@ Life was even more difficult because of fights with rival groups who wanted cont
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt bn"><h3>
-	রাস্তার জীবন কঠিন ছিল এবং প্রায় সব ছেলেদের দৈনিক খাদ্য পেতে সংগ্রাম করতে হত। কখনও কখনও তাদের গ্রেফতার করা হত, কখনও কখনও তাদের পেটানো হত। অসুস্থ হয়ে পড়লে তাদের সাহায্য করার কেউ ছিল না। এরা ভিক্ষা করে, এবং  প্লাস্টিক ও অন্যান্য পুনঃব্যবহারোপযোগী সামগ্রী বেচে  আয় করা অল্প অর্থের উপর নির্ভরশীল ছিল। শহরের বিভিন্ন অংশ নিয়ন্ত্রণ করতে চাওয়া প্রতিদ্বন্দ্বী দলের সাথে লড়াইয়ের কারণে জীবন আরও কঠিন হয়ে পরত।
+	রাস্তার জীবন কঠিন ছিল এবং প্রায় সব ছেলেদের দৈনিক খাদ্য পেতে সংগ্রাম করতে হত। কখনো কখনো তাদের গ্রেফতার করা হত, কখনো কখনো তাদের পেটানো হত। অসুস্থ হয়ে পড়লে তাদের সাহায্য করার কেউ ছিল না। এরা ভিক্ষা করে, এবং প্লাস্টিক ও অন্যান্য পুনঃব্যবহারোপযোগী সামগ্রী বেচে আয় করা অল্প অর্থের উপর নির্ভরশীল ছিল। শহরের বিভিন্ন অংশ নিয়ন্ত্রণ করতে চাওয়া প্রতিদ্বন্দ্বী দলের সাথে লড়াইয়ের কারণে জীবন আরও কঠিন হয়ে পড়ত।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt en"><h3>
 	Street life was difficult and most of the boys struggled daily just to get food. Sometimes they were arrested, sometimes they were beaten. When they were sick, there was no one to help.
@@ -185,10 +186,10 @@ Life was even more difficult because of fights with rival groups who wanted cont
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio05" src="http://globalstorybooks.net/media/audio/en/0262/mp3/05.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('05')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -217,10 +218,10 @@ Every day after that he would take out the book and look at the pictures. He did
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio06" src="http://globalstorybooks.net/media/audio/en/0262/mp3/06.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('06')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -240,7 +241,7 @@ Magozwe would daydream of being a pilot. Sometimes, he imagined that he was the 
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt bn"><h3>
-	ছবিগুলো একটি বালকের গল্প বর্ণনা করে যে বড় হয়ে একজন পাইলট হতে চায়। মাগোজওয়ে পাইলট হওয়ার স্বপ্ন দেখত। কখনও কখনও সে কল্পনা করত যে সে ওই গল্পের বালক।
+	ছবিগুলো একটি বালকের গল্প বর্ণনা করে যে বড় হয়ে একজন পাইলট হতে চায়। মাগোজওয়ে পাইলট হওয়ার স্বপ্ন দেখত। কখনো কখনো সে কল্পনা করত যে সে ওই গল্পের বালক।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt en"><h3>
 	The pictures told the story of a boy who grew up to be a pilot.
@@ -249,10 +250,10 @@ Magozwe would daydream of being a pilot. Sometimes, he imagined that he was the 
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio07" src="http://globalstorybooks.net/media/audio/en/0262/mp3/07.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('07')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -274,7 +275,7 @@ Magozwe looked at the man, and then at the house. "Maybe," he said, and walked a
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt bn"><h3>
-	মাগোজওয়ে অনেক ঠাণ্ডার মধ্যে রাস্তার পাশে দাঁড়িয়ে ভিক্ষা করছিল। একজন লোক তার কাছে গেল। "এই যে! আমি থমাস। আমি কাছেই এক জায়গায় কাজ করি যেখানে তুমি খাওয়ার জন্য কিছু পেতে পার," লোকটি বলল। সে একটি নীল ছাদওয়ালা হলুদ বাড়ির দিকে ইশারা করল। "আশা করি যে তুমি কিছু খাবার পেতে সেখানে যাবে?" তিনি জিজ্ঞাসা করলেন। মাগোজওয়ে লোকটির দিকে আর তারপর বাড়িটির দিকে তাকাল। "হয়তো যাব," সে বলল এবং চলে গেল।
+	মাগোজওয়ে অনেক ঠাণ্ডার মধ্যে রাস্তার পাশে দাঁড়িয়ে ভিক্ষা করছিল। একজন লোক তার কাছে গেল। "এই যে! আমি থমাস। আমি কাছেই এক জায়গায় কাজ করি যেখানে তুমি খাওয়ার জন্য কিছু পেতে পার," লোকটি বলল। সে একটি নীল ছাদওয়ালা হলুদ বাড়ির দিকে ইশারা করল। "আশা করি যে তুমি কিছু খাবার পেতে সেখানে যাবে?" তিনি জিজ্ঞাসা করলেন। মাগোজওয়ে লোকটির দিকে আর তারপর বাড়িটির দিকে তাকাল। "হয়তো যাব," সে বলল, এবং চলে গেল।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt en"><h3>
 	It was cold and Magozwe was standing on the road begging. A man walked up to him. "Hello, I'm Thomas. I work near here, at a place where you can get something to eat," said the man.
@@ -285,10 +286,10 @@ Magozwe looked at the man, and then at the house. "Maybe," he said, and walked a
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text09" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio08" src="http://globalstorybooks.net/media/audio/en/0262/mp3/08.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('08')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -308,7 +309,7 @@ Thomas listened to the stories of people's lives. He was serious and patient, ne
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt bn"><h3>
-	পরবর্তী মাসগুলোতে, গৃহহীন বালকগুলো থমাস কে আশেপাশে দেখতে অভ্যস্ত হয়ে পড়ল। তিনি মানুষের সাথে কথা বলতে পছন্দ করতেন, বিশেষত রাস্তায় বাস করা মানুষদের সাথে। থমাস মানুষের জীবনের গল্পগুলো শুনতেন। তিনি গম্ভীরভাবে ধৈর্য সহকারে শুনতেন, কখনও অভদ্রতা এবং অসম্মান করতেন না। কয়েকজন বালক হলুদ ও নীল বাড়ীটিতে দুপুরের খাবারের জন্য যেতে শুরু করল।
+	পরবর্তী মাসগুলোতে গৃহহীন বালকগুলো থমাস কে আশেপাশে দেখতে অভ্যস্ত হয়ে পড়ল। তিনি মানুষের সাথে কথা বলতে পছন্দ করতেন, বিশেষতঃ রাস্তায় বাস করা মানুষদের সাথে। থমাস মানুষের জীবনের গল্পগুলো শুনতেন। তিনি গম্ভীরভাবে ধৈর্য সহকারে শুনতেন, কখনো অভদ্রতা এবং অসম্মান করতেন না। কয়েকজন বালক হলুদ ও নীল বাড়ীটিতে দুপুরের খাবারের জন্য যেতে শুরু করল।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt en"><h3>
 	Over the months that followed, the homeless boys got used to seeing Thomas around. He liked to talk to people, especially people living on the streets.
@@ -317,10 +318,10 @@ Thomas listened to the stories of people's lives. He was serious and patient, ne
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text10" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio09" src="http://globalstorybooks.net/media/audio/en/0262/mp3/09.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('09')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -361,10 +362,10 @@ Thomas listened to the stories of people's lives. He was serious and patient, ne
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text09" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text11" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio10" src="http://globalstorybooks.net/media/audio/en/0262/mp3/10.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('10')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -386,7 +387,7 @@ Sometimes they would talk while they ate at the house with the blue roof.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt bn"><h3>
-	দেখা হবার পর থেকে মাগোজওয়ে থমাস কে নিজের গল্প বলতে শুরু করল। এটি ছিল তার চাচা এবং তার পালিয়ে যাওয়ার গল্প। থমাস বেশি কথা বলতেন না, তিনি মাগোজওয়েকে কি করতে হবে তা বলতেন না, কিন্তু তিনি সবসময় মনোযোগ দিয়ে শুনতেন। কখনও কখনও তারা নীল ছাদওয়ালা বাড়িতে খাবার খাওয়ার সময় কথা বলত।
+	দেখা হবার পর থেকে মাগোজওয়ে থমাস কে নিজের গল্প বলতে শুরু করল। এটি ছিল তার চাচা এবং তার পালিয়ে যাওয়ার গল্প। থমাস বেশি কথা বলতেন না, তিনি মাগোজওয়েকে কি করতে হবে তা বলতেন না, কিন্তু তিনি সবসময় মনোযোগ দিয়ে শুনতেন। কখনো কখনো তারা নীল ছাদওয়ালা বাড়িতে খাবার খাওয়ার সময় কথা বলত।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt en"><h3>
 	When they met, Magozwe began to tell his own story to Thomas. It was the story of his uncle and why he ran away.
@@ -397,10 +398,10 @@ Sometimes they would talk while they ate at the house with the blue roof.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text10" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text12" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text12" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio11" src="http://globalstorybooks.net/media/audio/en/0262/mp3/11.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('11')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -429,10 +430,10 @@ Thomas read that story to Magozwe many times, until one day he said, "I think it
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text11" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text13" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text11" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text13" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio12" src="http://globalstorybooks.net/media/audio/en/0262/mp3/12.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('12')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -461,10 +462,10 @@ What if they beat him at this new place? He was afraid. "Maybe it is better to s
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text12" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text14" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text12" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text14" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio13" src="http://globalstorybooks.net/media/audio/en/0262/mp3/13.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('13')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -482,17 +483,17 @@ What if they beat him at this new place? He was afraid. "Maybe it is better to s
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt bn"><h3>
-	সে থমাসকে তার এই ভয়ের কথা জানালেন। কিছু সময় পর, লোকটি ছেলেটিকে আশ্বস্ত করল যে নতুন জায়গাতে জীবন আরও ভালোও হতে পারে।
+	সে থমাসকে তার এই ভয়ের কথা জানালেন। কিছু সময় পর, লোকটি ছেলেটিকে আশ্বস্ত করলেন যে নতুন জায়গাতে জীবন আরও ভালোও হতে পারে।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt en"><h3>
 	He shared his fears with Thomas. Over time the man reassured the boy that life could be better at the new place.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text13" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text15" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text13" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text15" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio14" src="http://globalstorybooks.net/media/audio/en/0262/mp3/14.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('14')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -512,7 +513,7 @@ Altogether there were ten children living at that house. Along with Auntie Cissy
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt bn"><h3>
-	আর এই কারণে মাগোজওয়ে সবুজ ছাদওয়ালা বাড়ির একটি ঘরে চলে গেল। সে এই ঘরে আরও দুইজন ছেলের সাথে থাকত। সব মিলিয়ে দশজন বাচ্চা এই বাড়িতে বাস করত। সাথে থাকত সিসি খালা এবং তাঁর স্বামী, তিনটি কুকুর, একটি বিড়াল, এবং একটি বুড়ো ছাগল।
+	আর এই কারণে মাগোজওয়ে সবুজ ছাদওয়ালা বাড়ির একটি ঘরে চলে গেল। সে এই ঘরে আরও দুইজন ছেলের সাথে থাকত। সব মিলিয়ে দশজন বাচ্চা এই বাড়িতে বাস করত। সাথে থাকত সিসি খালা এবং তাঁর স্বামী, তিনটি কুকুর, একটি বিড়াল, আর একটি বুড়ো ছাগল।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt en"><h3>
 	And so Magozwe moved into a room in a house with a green roof. He shared the room with two other boys.
@@ -521,10 +522,10 @@ Altogether there were ten children living at that house. Along with Auntie Cissy
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text14" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text16" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text14" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text16" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio15" src="http://globalstorybooks.net/media/audio/en/0262/mp3/15.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('15')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton15" onclick="playpause('15')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -544,7 +545,7 @@ But he thought about the pilot and the soccer player in the storybooks. Like the
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt bn"><h3>
-	মাগোজওয়ে স্কুলে যাওয়া শুরু করল আর এটি কঠিন ছিল। তার অনেক কিছু শিখা বাকি ছিল। কখনও কখনও সে হার মেনে নিতে চাইত। কিন্তু তখন সে গল্পগুলোর পাইলট এবং ফুটবল খেলোয়াড়ের কথা ভাবত। তাদের মত, সে হার মানেনি।
+	মাগোজওয়ে স্কুলে যাওয়া শুরু করল আর এটি কঠিন ছিল। তার অনেক কিছু শিখা বাকি ছিল। কখনো কখনো সে হার মেনে নিতে চাইত। কিন্তু তখন সে গল্পগুলোর পাইলট এবং ফুটবল খেলোয়াড়ের কথা ভাবত। ঠিক তাদের মত, সে হার মানেনি।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt en"><h3>
 	Magozwe started school and it was difficult. He had a lot to catch up. Sometimes he wanted to give up.
@@ -553,10 +554,10 @@ But he thought about the pilot and the soccer player in the storybooks. Like the
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text15" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text17" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Next page" width="16px"></a>
+		<a href="#text15" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text17" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 		<audio id="audio16" src="http://globalstorybooks.net/media/audio/en/0262/mp3/16.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('16')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton16" onclick="playpause('16')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
@@ -582,7 +583,7 @@ But he thought about the pilot and the soccer player in the storybooks. Like the
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt bn"><h3>
-	মাগোজওয়ে সবুজ ছাদওয়ালা বাড়িটির উঠোনে বসে  স্কুলের একটি গল্পের বই পড়ছিল। তখন থমাস এসে তার পাশে বসল। "এই গল্পটি কি নিয়ে?" থমাস জিজ্ঞাসা করলেন। "এটি একজন বালক সম্পর্কে যে একজন শিক্ষক হয়," মাগোজওয়ে উত্তর দিল। "বালকটির নাম কি?" থমাস জিজ্ঞাসা করলেন। "তার নাম মাগোজওয়ে," মাগোজওয়ে হেসে বলল।
+	মাগোজওয়ে সবুজ ছাদওয়ালা বাড়িটির উঠোনে বসে স্কুলের একটি গল্পের বই পড়ছিল। তখন থমাস এসে তার পাশে বসল। "এই গল্পটি কি নিয়ে?" থমাস জিজ্ঞাসা করলেন। "এটি একজন বালক সম্পর্কে যে একজন শিক্ষক হয়," মাগোজওয়ে উত্তর দিল। "বালকটির নাম কি?" থমাস জিজ্ঞাসা করলেন। "তার নাম মাগোজওয়ে," মাগোজওয়ে হেসে বলল।
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt en"><h3>
 	Magozwe was sitting in the yard at the house with the green roof, reading a storybook from school. Thomas came up and sat next to him.
@@ -597,10 +598,10 @@ But he thought about the pilot and the soccer player in the storybooks. Like the
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group">
-		<a href="#text16" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#colophon" class="btn btn-lg"><img src="/storybooks-bangladesh/css/arrow-down.svg" alt="Story credits" width="16px"></a>
+		<a href="#text16" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#colophon" class="btn btn-lg" title="Story credits"><i class="icon-arrow-down"></i></a>
 		<audio id="audio17" src="http://globalstorybooks.net/media/en/0262/mp3/17.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('17')"><img src="/storybooks-bangladesh/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+		<button class="btn btn-lg" id="playbutton17" onclick="playpause('17')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group">
 		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>

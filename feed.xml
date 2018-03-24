@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Storybooks Bangladesh</title>
-    <description>Storybooks Bangladesh is designed specifically for teachers and makes 40 stories from the African Storybook available in English and French, as well as the major immigrant and refugee languages of Bangladesh (with text and audio in Bengali, English, Arabic, and many other languages).
+    <description>Storybooks Bangladesh is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available with text and audio in Bengali as well as the most widely spoken languages of Bangladesh (with text and audio in Bengali, English, French, Arabic, and many other languages).
 </description>
-    <link>https://global-asp.github.io/storybooks-bangladesh//</link>
-    <atom:link href="https://global-asp.github.io/storybooks-bangladesh//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 23 Mar 2018 12:57:33 -0700</pubDate>
-    <lastBuildDate>Fri, 23 Mar 2018 12:57:33 -0700</lastBuildDate>
+    <link>https://global-asp.github.io//storybooks-bangladesh/</link>
+    <atom:link href="https://global-asp.github.io//storybooks-bangladesh/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 24 Mar 2018 08:15:19 -0700</pubDate>
+    <lastBuildDate>Sat, 24 Mar 2018 08:15:19 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
   </channel>
