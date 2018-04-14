@@ -50,12 +50,14 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">What Vusi's sister said</span>
-<span class="en">What Vusi's sister said</span>
-<span class="bn">ভুসির বোন যা বলল</span>
+			<span class="l1">ভুসির বোন যা বলল</span>
+			<span class="l2">What Vusi's sister said</span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/en/0291/mp3/01.mp3"></audio>
+				<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+				<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-bangladesh/css/pencil.svg" alt="Written by" width="38px"></span> Nina Orange</h3>
@@ -64,6 +66,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-bangladesh/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-bangladesh/stories/en">English</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-bangladesh/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-bangladesh/stories/en/level4">Level 4</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-bangladesh/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/en/0291/en-0291_vusi.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -78,10 +81,10 @@ make a large cake for your sister's
 wedding".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	একদিন খুব সকালে ভুসির দাদী ভুসিকে ডাকলেন, "ভুসি, এই ডিম তোমার মা-বাবার কাছে নিয়ে যাও। তাঁরা তোমার বোনের বিয়ে উপলক্ষে একটি বড় কেক বানাবেন।"
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Early one morning Vusi's granny
 called him, "Vusi, please take this
 egg to your parents. They want to
@@ -96,8 +99,8 @@ wedding".
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -113,10 +116,10 @@ grabbed the egg from Vusi and shot
 it at a tree. The egg broke.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	তার মা-বাবার বাড়ি যাবার পথে, ভুসির দু'টো ছেলের সাথে দেখা হল যারা ফল পাড়ছিল। একটি ছেলে ভুসির থেকে ডিম কেড়ে নেয় এবং গাছের দিকে ছুঁড়ে মারে। ডিম ভেঙে যায়।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	On his way to his parents, Vusi met
 two boys picking fruit. One boy
 grabbed the egg from Vusi and shot
@@ -130,8 +133,8 @@ it at a tree. The egg broke.
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -148,10 +151,10 @@ will my sister say if there is no
 wedding cake?"
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	"একি করলে তুমি?" ভুসি চিৎকার দিয়ে বলল। "এই ডিম কেকের জন্য ছিল। কেকটি আমার বোনের বিয়ের জন্য ছিল। আমার বোন কি বলবে যদি কোনো বিয়ের কেক না থাকে?"
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	"What have you done?" cried Vusi.
 "That egg was for a cake. The cake
 was for my sister's wedding. What
@@ -166,8 +169,8 @@ wedding cake?"
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -185,10 +188,10 @@ sister," said one.
 Vusi continued on his journey.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	ছেলেগুলো ভুসিকে উত্যক্ত করার জন্য অনুতপ্ত হল। "আমরা কেকের ব্যাপারে কোনও সাহায্য করতে পারবনা, কিন্তু এই ছড়িটি তোমার বোনের জন্য," একজন বলল। ভুসি তার যাত্রা অব্যাহত রাখল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	The boys were sorry for teasing
 Vusi.
 "We can't help with the cake, but
@@ -204,8 +207,8 @@ Vusi continued on his journey.
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -222,10 +225,10 @@ But the stick was not strong enough
 for building, and it broke.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	পথিমধ্যে তার দু'জন লোকের সাথে দেখা হল যারা বাড়ি বানাচ্ছিলেন। "আমরা কি এই শক্ত ছড়িটি ব্যবহার করতে পারি?" একজন জিজ্ঞেস করলেন। কিন্তু ছড়িটি বাড়ি বানানোর মত শক্ত ছিল না, এবং এটি ভেঙে গেল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Along the way he met two men
 building a house. "Can we use that
 strong stick?" asked one.
@@ -240,8 +243,8 @@ for building, and it broke.
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -261,10 +264,10 @@ cake, and no gift. What will my
 sister say?"
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	"একি করলেন আপনারা?" ভুসি কেঁদে বলল। "এই লাঠিটি আমার বোনের জন্য উপহার ছিল। ফল পাড়ছিল ছেলেগুলো আমাকে লাঠিটি দিয়েছে কারণ তারা কেকের ডিমটি ভেঙে ফেলেছিল। কেকটি আমার বোনের বিয়ের জন্য ছিল। এখন কোনও ডিম নেই, কোনও কেক নেই, আর কোনও উপহার নেই। আমার বোন কি বলবে?"
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	"What have you done?" cried Vusi.
 "That stick was a gift for my sister.
 The fruit pickers gave me the stick
@@ -282,8 +285,8 @@ sister say?"
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -302,10 +305,10 @@ And so Vusi continued on his
 journey.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	নির্মাতারা ছড়িটি ভেঙে ফেলার জন্য অনুতপ্ত হল। "আমরা কেকের ব্যাপারে কোনও সাহায্য করতে পারবনা, কিন্তু এই কিছু ছাওনি দেয়ার খড় তোমার বোনের জন্য," একজন বললেন। এবং ভুসি তার যাত্রা অব্যাহত রাখল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	The builders were sorry for breaking
 the stick.
 "We can't help with the cake, but
@@ -322,8 +325,8 @@ journey.
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -340,10 +343,10 @@ But the thatch was so tasty that the
 cow ate it all!
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	পথিমধ্যে ভুসির একজন কৃষক এবং একটি গরুর সাথে দেখা হল। "কি সুস্বাদু খড়, আমি কি ছোট এক কামড় খেতে পারি?" গরুটি জিজ্ঞেস করল। কিন্তু খড়গুলো এতই মজাদার ছিল যে গরুটি সবগুলোই খেয়ে ফেলল!
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Along the way, Vusi met a farmer
 and a cow. "What delicious thatch,
 can I have a nibble?" asked the cow.
@@ -358,8 +361,8 @@ cow ate it all!
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -382,10 +385,10 @@ cake, and no gift. What will my
 sister say?"
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	"একি করলে তুমি?" ভুসি কেঁদে বলল। "এই খড় আমার বোনের জন্য উপহার ছিল। নির্মাতারা এই খড় আমাকে দিয়েছিলেন কারণ তাঁরা ফল পাড়ছিল ছেলেগুলির দেয়া ছড়িটি ভেঙে ফেলেছিল। ছেলেগুলো আমাকে ছড়িটি দিয়েছিল কারণ তারা কেকের ডিম ভেঙে ফেলেছিল। কেকটি আমার বোনের বিয়ের জন্য ছিল। এখন কোনও ডিম নেই, কোনও কেক নেই, আর কোনও উপহার নেই। আমার বোন কি বলবে?"
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	"What have you done?" cried Vusi.
 "That thatch was a gift for my
 sister. The builders gave me the
@@ -406,8 +409,8 @@ sister say?"
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -423,10 +426,10 @@ could go with Vusi as a gift for his
 sister. And so Vusi carried on.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	গরু তার লোভের কারণে অনুতপ্ত হল। কৃষক রাজি হন যে গরুটি তার বোনের জন্য উপহার হিসেবে ভুসির সাথে যেতে পারে। এবং ভুসি চলতে থাকল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	The cow was sorry she was greedy.
 The farmer agreed that the cow
 could go with Vusi as a gift for his
@@ -440,8 +443,8 @@ sister. And so Vusi carried on.
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -459,10 +462,10 @@ wedding. The guests were already
 eating.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	কিন্তু গরুটি রাতের খাবারের সময় আবার কৃষকের কাছে ফিরে গেল। এবং ভুসি যাত্রাপথে হারিয়ে গেল। সে তার বোনের বিয়েতে অনেক দেরীতে পৌঁছল। অতিথিরা ইতিমধ্যে খাবার খাওয়া শুরু করে দিয়েছিল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	But the cow ran back to the farmer
 at supper time.
 And Vusi got lost on his journey.
@@ -478,8 +481,8 @@ eating.
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -502,10 +505,10 @@ there is no egg, no cake, and no
 gift."
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	"আমি এখন কি করব?" ভুসি কেঁদে বলল। "যেই গরুটি পালিয়ে গেল তা ছিল নির্মাতাদের দেয়া খড়ের বদলে পাওয়া উপহার। নির্মাতারা এই খড় আমাকে দিয়েছিলেন কারণ তাঁরা ফল পাড়ছিল ছেলেগুলির দেয়া ছড়িটি ভেঙে ফেলেছিল। ছেলেগুলো আমাকে ছড়িটি দিয়েছিল কারণ তারা কেকের ডিম ভেঙে ফেলেছিল। কেকটি আমার বোনের বিয়ের জন্য ছিল। এখন কোনও ডিম নেই, কোনও কেক নেই, আর কোনও উপহার নেই।"
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	"What shall I do?" cried Vusi.
 "The cow that ran away was a gift,
 in return for the thatch the builders
@@ -526,8 +529,8 @@ gift."
 		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -548,10 +551,10 @@ day!"
 And so that's what Vusi did.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	ভুসির বোন কিছুক্ষণ ভাবলেন, তারপর তিনি বললেন, "ভুসি আমার ভাই, আমি সত্যি সত্যিই উপহারের ব্যাপারে গ্রাহ্য করি না। আমি কেকের ব্যাপারেও কোনও গ্রাহ্য করি না! আমরা সবাই এখানে একসাথে আছি, আমি খুব খুশি। এখন তোমার সুন্দর জামাগুলো পরে আস এবং আমরা এই দিনটি উদযাপন করি!" এবং ভুসি ঠিক তাই করল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Vusi's sister thought for a while,
 then she said,
 "Vusi my brother, I don't really care
@@ -570,8 +573,8 @@ And so that's what Vusi did.
 		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 

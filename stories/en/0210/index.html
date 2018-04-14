@@ -50,12 +50,14 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0210/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Tingi and the Cows</span>
-<span class="en">Tingi and the Cows</span>
-<span class="bn"></span>
+			<span class="l1">টিঙ্গি এবং গরু</span>
+			<span class="l2">Tingi and the Cows</span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/en/0210/mp3/01.mp3"></audio>
+				<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+				<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-bangladesh/css/pencil.svg" alt="Written by" width="38px"></span> Ingrid Schechter</h3>
@@ -64,6 +66,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-bangladesh/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-bangladesh/stories/en">English</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-bangladesh/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-bangladesh/stories/en/level2">Level 2</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-bangladesh/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/en/0210/en-0210_tingi.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -75,10 +78,10 @@
 grandmother.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	টিঙ্গি তার দাদীর সাথে থাকত।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Tingi lived with his
 grandmother.
 	</h3></div>
@@ -90,8 +93,8 @@ grandmother.
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -105,10 +108,10 @@ grandmother.
 the cows with her.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	সে তাঁর সাথে গরুগুলো দেখাশোনা করত।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	He used to look after
 the cows with her.
 	</h3></div>
@@ -120,8 +123,8 @@ the cows with her.
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -135,10 +138,10 @@ the cows with her.
 came.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	একদিন সৈন্যরা আসল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	One day the soldiers
 came.
 	</h3></div>
@@ -150,8 +153,8 @@ came.
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -165,10 +168,10 @@ came.
 away.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	তারা গরুগুলো নিয়ে গেল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	They took the cows
 away.
 	</h3></div>
@@ -180,8 +183,8 @@ away.
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -196,10 +199,10 @@ grandmother ran away
 and hid.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	টিঙ্গি আর তার দাদী দৌড়ে পালাল এবং লুকিয়ে গেল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Tingi and his
 grandmother ran away
 and hid.
@@ -212,8 +215,8 @@ and hid.
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -227,10 +230,10 @@ and hid.
 until night.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	তারা একটি অনাবাদি জমিতে রাত পর্যন্ত লুকিয়ে ছিল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	They hid in the bush
 until night.
 	</h3></div>
@@ -242,8 +245,8 @@ until night.
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -257,10 +260,10 @@ until night.
 came back.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	তারপর সৈন্যরা ফিরে আসল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Then the soldiers
 came back.
 	</h3></div>
@@ -272,8 +275,8 @@ came back.
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -287,10 +290,10 @@ came back.
 under the leaves.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	দাদী টিঙ্গিকে পাতার নিচে লুকিয়ে রাখলেন।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Grandmother hid Tingi
 under the leaves.
 	</h3></div>
@@ -302,8 +305,8 @@ under the leaves.
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -318,10 +321,10 @@ his foot right on him,
 but he kept quiet.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	একজন সৈন্য টিঙ্গির উপর তার পা রাখল, কিন্তু টিঙ্গি চুপ থাকল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	One of the soldiers put
 his foot right on him,
 but he kept quiet.
@@ -334,8 +337,8 @@ but he kept quiet.
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -350,10 +353,10 @@ and his grandmother
 came out.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	বিপদমুক্ত হলে, টিঙ্গি এবং তার দাদী বেরিয়ে এল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	When it was safe, Tingi
 and his grandmother
 came out.
@@ -366,8 +369,8 @@ came out.
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -381,10 +384,10 @@ came out.
 quietly.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	তারা চুপিচুপি ঘরে ফিরে গেল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	They crept home very
 quietly.
 	</h3></div>
@@ -396,8 +399,8 @@ quietly.
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 

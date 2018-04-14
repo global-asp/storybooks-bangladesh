@@ -50,12 +50,14 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1 dir="rtl"><span class="def">أنانسي و الحكمة</span>
-<span dir="ltr" class="en">Anansi and Wisdom</span>
-<span dir="ltr" class="bn">আনান্সি এবং জ্ঞান</span>
+			<span class="l1">আনান্সি এবং জ্ঞান</span>
+			<span class="l2">Anansi and Wisdom</span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/ar/0006/mp3/01.mp3"></audio>
+				<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+				<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-bangladesh/css/pencil.svg" alt="Written by" width="38px"></span> Ghanaian folktale</h3>
@@ -65,6 +67,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-bangladesh/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-bangladesh/stories/ar">Arabic</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-bangladesh/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-bangladesh/stories/ar/level3">Level 3</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-bangladesh/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/ar/0006/ar-0006_anansi.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -75,10 +78,10 @@
 	في قديم الزمان، كان الناس لا يعرفون شيئا. كانوا لا يعرفون طريقة زراعة المحاصيل، أو نسج الأقمشة، أو صناعة الأدوات الحديدية. كان هناك الإله نيام في السماء وكان يملك كل الحكمة الموجودة في العالم. وكان محتفظا بها في وعاء من الفخار.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
 	দীর্ঘদিন আগে মানুষ কিছুই জানত না। তারা জানত না যে ফসল কিভাবে রোপণ করতে হয়, বা কাপড় কিভাবে বুনতে হয়, কিংবা লোহার সরঞ্জাম কিভাবে তৈরি করতে হয়। আকাশে নিয়াম দেব এর কাছে সমগ্র বিশ্বের জ্ঞান ছিল। তিনি একটি কাদামাটির পাত্রে এটি নিরাপদে রেখেছিলেন।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	Long long ago people didn't
 know anything. They didn't
 know how to plant crops, or
@@ -96,8 +99,8 @@ He kept it safe in a clay pot.
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','bn')" class="btn btn-lg lang-bn" title="Switch between Arabic and Bengali">bn</button>
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
+		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -110,10 +113,10 @@ He kept it safe in a clay pot.
 	في يوم من الأيام، قرر نيام أن يعطي وعاء الحكمة إلى أنانسي. في كل مرة كان أنانسي ينظر في وعاء الفخار، كان يتعلم شيئا جديدا. كان أمرا مثيرا!
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
 	একদিন নিয়াম সিদ্ধান্ত নিলেন যে তিনি আনান্সিকে জ্ঞানের পাত্রটি দিবেন। প্রত্যেক সময় আনান্সি কাদামাটির পাত্রে তাকালে তিনি নতুন কিছু শিখতেন। এটি অনেক উত্তেজনাপূর্ণ ছিল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	One day, Nyame decided that
 he would give the pot of
 wisdom to Anansi.
@@ -129,8 +132,8 @@ new. It was so exciting!
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','bn')" class="btn btn-lg lang-bn" title="Switch between Arabic and Bengali">bn</button>
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
+		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -143,10 +146,10 @@ new. It was so exciting!
 	فكر الجشع أنانسي: "أنا سوف أحتفظ بالوعاء في مكان آمن في أعلى شجرة طويلة. بعد ذلك يمكن أن يكون كل شيء لنفسي!" ونسج خيط طويل، ولفه حول وعاء الطين، وربطه إلى بطنه. بدأ تسلق الشجرة. ولكن كان من الصعب تسلق الشجرة والوعاء يخبط في ركبتيه طوال الوقت.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
 	লোভী আনান্সি ভাবল, "আমি একটি লম্বা বৃক্ষের উপড়ে পাত্রটি নিরাপদে রাখব। তাহলে এটি সম্পূর্ণ আমার হবে!" তিনি একটি দীর্ঘ সুতা দিয়ে মাটির পাত্রটির চারপাশে ঘুরিয়ে নিজের পেটের সাথে বাঁধলেন। তিনি গাছ চড়তে শুরু করলেন। কিন্তু পাত্রটি সবসময় তার হাঁটুতে আঘাত করার কারণে গাছে চড়তে অনেক অসুবিধা হচ্ছিল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	Greedy Anansi thought, "I'll
 keep the pot safe at the top of a
 tall tree. Then I can have it all
@@ -167,8 +170,8 @@ knees all the time.
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','bn')" class="btn btn-lg lang-bn" title="Switch between Arabic and Bengali">bn</button>
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
+		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -181,10 +184,10 @@ knees all the time.
 	خلال كل هذا الوقت كان ابن أنانسي الصغير يشاهد من أسفل الشجرة. وقال: "ألن يكون من الأسهل تسلق الشجرة إذا كان الوعاء مربوطا إلى ظهرك بدلا من بطنك؟" حاول أنانسي ربط وعاء الفخار المليء بالحكمة إلى ظهره، وأصبح فعلا تسلق الشجرة أسهل.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
 	আনান্সির ছোট ছেলে গাছের নিচে দাঁড়িয়ে সব দেখছিল। সে বলল, "পাত্রটি তোমার পিঠে বাঁধলে কি তোমার চড়তে সুবিধা হতো না? আনান্সি জ্ঞানে ভরা মাটির পাত্রটি তার পিঠে বেঁধে চেষ্টা করে দেখলেন, এবং এটি সত্যিই অনেক সহজ হল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	All the time Anansi's young son
 had been standing at the
 bottom of the tree watching. He
@@ -203,8 +206,8 @@ really was a lot easier.
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','bn')" class="btn btn-lg lang-bn" title="Switch between Arabic and Bengali">bn</button>
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
+		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -217,10 +220,10 @@ really was a lot easier.
 	خلال وقت قصير وصل إلى أعلى الشجرة. ولكن بعد ذلك توقف وفكر، "أنا من المفترض أن أكون صاحب كل الحكمة، وهنا كان ابني أذكى مني!" كان أنانسي غاضب جدا وألقى وعاء الفخار إلى أسفل الشجرة.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
 	তৎক্ষণাৎ তিনি গাছের উপর পৌঁছালেন। কিন্তু তারপর তিনি থামলেন এবং ভাবলেন, "আমার কাছেইতো সব জ্ঞান থাকার কথা, আর সেখানে কিনা আমার ছেলে আমার থেকে বেশি বুদ্ধিমান!" আনান্সি এতটাই রেগে গেলেন যে তিনি গাছ থেকে মাটির পাত্রটি নিচে ছুঁড়ে ফেলে দিলেন।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	In no time he reached the top of
 the tree.
 But then he stopped and
@@ -240,8 +243,8 @@ out of the tree.
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','bn')" class="btn btn-lg lang-bn" title="Switch between Arabic and Bengali">bn</button>
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
+		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -254,10 +257,10 @@ out of the tree.
 	تحطم الوعاء إلى قطع صغيرة على الأرض. وأصبحت الحكمة للجميع لكي يتشاركوها. وهكذا تعلم الناس الفلاحة، ونسج الأقمشة، وصناعة الأدوات الحديدية، وجميع الأشياء الأخرى التي يعرف الناس كيفية القيام بها.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
 	এটি মাটিতে পড়ে টুকরো টুকরো হয়ে গেল। জ্ঞান সবার মাঝে উন্মুক্ত হয়ে গেল ভাগ করে নেওয়ার জন্য। এবং এভাবেই মানুষ কৃষিকাজ করতে, বস্ত্র বুনন করতে, লোহার সরঞ্জাম বানাতে এবং অন্য যা কিছু মানুষ পারে তা করতে শিখল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	It smashed into pieces on the
 ground. The wisdom was free
 for everyone to share.
@@ -276,8 +279,8 @@ how to do.
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','bn')" class="btn btn-lg lang-bn" title="Switch between Arabic and Bengali">bn</button>
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
+		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 

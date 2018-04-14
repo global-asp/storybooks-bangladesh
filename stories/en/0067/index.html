@@ -50,12 +50,14 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0067/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Cooking</span>
-<span class="en">Cooking</span>
-<span class="bn"></span>
+			<span class="l1">রান্না</span>
+			<span class="l2">Cooking</span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/en/0067/mp3/01.mp3"></audio>
+				<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+				<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-bangladesh/css/pencil.svg" alt="Written by" width="38px"></span> Clare Verbeek, Thembani Dladla, Zanele Buthelezi</h3>
@@ -64,6 +66,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-bangladesh/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-bangladesh/stories/en">English</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-bangladesh/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-bangladesh/stories/en/level1">Level 1</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-bangladesh/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/en/0067/en-0067_cooking.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -74,10 +77,10 @@
 	I peel the potatoes.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	আমি আলুর খোসা ছাড়াই।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	I peel the potatoes.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -88,8 +91,8 @@
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -102,10 +105,10 @@
 	I chop a cabbage.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	আমি বাঁধাকপি কুচি করি।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	I chop a cabbage.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -116,8 +119,8 @@
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -130,10 +133,10 @@
 	I grate the carrots.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	আমি গাজর কোড়াই।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	I grate the carrots.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -144,8 +147,8 @@
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -158,10 +161,10 @@
 	I wash the beans.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	আমি শিম ধুই।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	I wash the beans.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -172,8 +175,8 @@
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -186,10 +189,10 @@
 	I cut the butternut.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	আমি বাটারনাট কুমড়ো কাটি।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	I cut the butternut.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -200,8 +203,8 @@
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -214,10 +217,10 @@
 	I chop the spinach.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	আমি পালং শাক কুচি করি।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	I chop the spinach.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -228,8 +231,8 @@
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -243,10 +246,10 @@
 onions.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	আমার মা পেঁয়াজ কুচি করেন।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	My mom chops the
 onions.
 	</h3></div>
@@ -258,8 +261,8 @@ onions.
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 
@@ -273,10 +276,10 @@ onions.
 when they are chopped.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	পেঁয়াজ কুচোনোর সময় আমার চোখে পানি আসে।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	Onions make me cry
 when they are chopped.
 	</h3></div>
@@ -288,8 +291,8 @@ when they are chopped.
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('en','bn')" class="btn btn-lg lang-bn" title="Switch between English and Bengali">bn</button>
-		<button onclick="switchlang('en','en')" class="btn btn-lg lang-en" title="Switch between English and English">en</button>
+		<button onclick="switchlang('en,bn','bn,en,en')" class="btn btn-lg lang-primary" title="Switch between English and Bengali">bn</button>
+		<button onclick="switchlang('en,en','bn,en,en')" class="btn btn-lg lang-secondary" title="Switch between English and English">en</button>
 	</div>
 </div>
 

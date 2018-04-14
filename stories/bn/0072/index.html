@@ -50,12 +50,14 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">হানিগাইড পাখির প্রতিশোধ</span>
-<span class="en">The Honeyguide's revenge</span>
-<span class="bn">হানিগাইড পাখির প্রতিশোধ</span>
+			<span class="l1">হানিগাইড পাখির প্রতিশোধ</span>
+			<span class="l2">The Honeyguide's revenge</span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/bn/0072/mp3/01.mp3"></audio>
+				<button onclick="switchlang('bn,bn','bn,en,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and Bengali">bn</button>
+				<button onclick="switchlang('bn,en','bn,en,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and English">en</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-bangladesh/css/pencil.svg" alt="Written by" width="38px"></span> Zulu folktale</h3>
@@ -64,6 +66,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-bangladesh/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-bangladesh/stories/bn">Bengali</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-bangladesh/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-bangladesh/stories/bn/level4">Level 4</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-bangladesh/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/bn/0072/bn-0072_honeyguide.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -74,10 +77,10 @@
 	এই গল্পটি হল এনগেডে নামক হানিগাইড পাখি, এবং গিংগিলে নামক একজন লোভী তরুণের। একদিন গিংগিলে যখন বাহিরে শিকার করছিল, সে এনগেডের ডাক শুনতে পেল। মধুর কথা ভেবেই গিংগিলের মুখে পানি চলে আসল। সে থামল এবং মন দিয়ে শুনল। সে খুঁজতে থাকল যতক্ষণ না পর্যন্ত সে তার মাথার উপরে ডালের মাঝে পাখিটি দেখতে পেল। "চিঁ-চিঁ-চিঁ," ছোট পাখিটি এক গাছ থেকে অন্য গাছে উড়ে বেড়িয়ে ডাকছিল। "চিঁ-চিঁ-চিঁ," সে ডাকল আর মাঝে মাঝে থেমে দেখল যে গিংগিলে তাকে অনুসরণ করছে কিনা।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	এই গল্পটি হল এনগেডে নামক হানিগাইড পাখি, এবং গিংগিলে নামক একজন লোভী তরুণের। একদিন গিংগিলে যখন বাহিরে শিকার করছিল, সে এনগেডের ডাক শুনতে পেল। মধুর কথা ভেবেই গিংগিলের মুখে পানি চলে আসল। সে থামল এবং মন দিয়ে শুনল। সে খুঁজতে থাকল যতক্ষণ না পর্যন্ত সে তার মাথার উপরে ডালের মাঝে পাখিটি দেখতে পেল। "চিঁ-চিঁ-চিঁ," ছোট পাখিটি এক গাছ থেকে অন্য গাছে উড়ে বেড়িয়ে ডাকছিল। "চিঁ-চিঁ-চিঁ," সে ডাকল আর মাঝে মাঝে থেমে দেখল যে গিংগিলে তাকে অনুসরণ করছে কিনা।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	This is the story of Ngede, the Honeyguide, and a greedy young
 man named Gingile.
 One day while Gingile was out hunting he heard the call of Ngede.
@@ -97,8 +100,8 @@ sure that Gingile followed.
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,bn','bn,en,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and Bengali">bn</button>
+		<button onclick="switchlang('bn,en','bn,en,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and English">en</button>
 	</div>
 </div>
 
@@ -111,10 +114,10 @@ sure that Gingile followed.
 	আধ ঘণ্টা পরে, তারা একটি প্রকাণ্ড বুনো ডুমুর গাছের কাছে পৌঁছে। এনগেডে ডালে ডালে লাফিয়ে বেড়াচ্ছিল। তারপর সে একটি ডালে শান্ত হয়ে বসল আর গিংগিলের দিকে এমনভাবে মাথা উঁচাল যেন সে বলবে, "এই যে এখানে! এখনই আস! এত সময় লাগছে কিসের জন্য?" গিংগিলে গাছের নিচে কোন মৌমাছি দেখতে পায়নি কিন্তু সে এনগেডেকে বিশ্বাস করল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	আধ ঘণ্টা পরে, তারা একটি প্রকাণ্ড বুনো ডুমুর গাছের কাছে পৌঁছে। এনগেডে ডালে ডালে লাফিয়ে বেড়াচ্ছিল। তারপর সে একটি ডালে শান্ত হয়ে বসল আর গিংগিলের দিকে এমনভাবে মাথা উঁচাল যেন সে বলবে, "এই যে এখানে! এখনই আস! এত সময় লাগছে কিসের জন্য?" গিংগিলে গাছের নিচে কোন মৌমাছি দেখতে পায়নি কিন্তু সে এনগেডেকে বিশ্বাস করল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	After half an hour, they reached a
 huge wild fig tree.
 Ngede hopped about madly among
@@ -135,8 +138,8 @@ Ngede.
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,bn','bn,en,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and Bengali">bn</button>
+		<button onclick="switchlang('bn,en','bn,en,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and English">en</button>
 	</div>
 </div>
 
@@ -149,10 +152,10 @@ Ngede.
 	তাই গিংগিলে গাছের নিচে তার শিকারের বর্শাটি নামিয়ে রাখল, কিছু শুকনো ডাল জড়ো করল এবং ছোট করে আগুন ধরাল। যখন আগুন ভালো করে জ্বলতে লাগল, তখন সে একটি শুকনো লম্বা লাঠি আগুনের মাঝখানে রাখল। এই কাঠ পোড়ার সময় অনেক ধোঁয়া সৃষ্টি করার জন্য বিশেষভাবে পরিচিত। সে দাঁত দিয়ে ধোঁয়া ধরা লাঠিটির ঠাণ্ডা প্রান্ত কামড়ে ধরে গাছ বেঁয়ে উঠা শুরু করল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	তাই গিংগিলে গাছের নিচে তার শিকারের বর্শাটি নামিয়ে রাখল, কিছু শুকনো ডাল জড়ো করল এবং ছোট করে আগুন ধরাল। যখন আগুন ভালো করে জ্বলতে লাগল, তখন সে একটি শুকনো লম্বা লাঠি আগুনের মাঝখানে রাখল। এই কাঠ পোড়ার সময় অনেক ধোঁয়া সৃষ্টি করার জন্য বিশেষভাবে পরিচিত। সে দাঁত দিয়ে ধোঁয়া ধরা লাঠিটির ঠাণ্ডা প্রান্ত কামড়ে ধরে গাছ বেঁয়ে উঠা শুরু করল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	So Gingile put down his hunting
 spear under the tree, gathered
 some dry twigs and made a small
@@ -174,8 +177,8 @@ teeth.
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,bn','bn,en,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and Bengali">bn</button>
+		<button onclick="switchlang('bn,en','bn,en,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and English">en</button>
 	</div>
 </div>
 
@@ -188,10 +191,10 @@ teeth.
 	শীঘ্রই সে বাস্ত মৌমাছির জোরালো গুঞ্জন শুনতে পেল। তারা গাছটির কোটর তথা তাদের মৌচাক থেকে ভিতরে ও বাহিরে আসা যাওয়া করছিল। যখন গিংগিলে মৌচাক পর্যন্ত পোঁছাল, তখন সে লাঠির ধোঁয়া ধরা প্রান্তটি কোটরের ভিতরে ঢুকিয়ে দিল। মৌমাছিরা ক্রুদ্ধ ও রুষ্ট হয়ে তীব্র বেগে বেরিয়ে আসল। তারা উড়ে গেল কারণ তারা ধোঁয়া পছন্দ করেনা, কিন্তু তার আগে তারা গিংগিলেকে বেশ কিছু যন্ত্রনাদায়ক হুল ফুটিয়ে গেল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	শীঘ্রই সে বাস্ত মৌমাছির জোরালো গুঞ্জন শুনতে পেল। তারা গাছটির কোটর তথা তাদের মৌচাক থেকে ভিতরে ও বাহিরে আসা যাওয়া করছিল। যখন গিংগিলে মৌচাক পর্যন্ত পোঁছাল, তখন সে লাঠির ধোঁয়া ধরা প্রান্তটি কোটরের ভিতরে ঢুকিয়ে দিল। মৌমাছিরা ক্রুদ্ধ ও রুষ্ট হয়ে তীব্র বেগে বেরিয়ে আসল। তারা উড়ে গেল কারণ তারা ধোঁয়া পছন্দ করেনা, কিন্তু তার আগে তারা গিংগিলেকে বেশ কিছু যন্ত্রনাদায়ক হুল ফুটিয়ে গেল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Soon he could hear the loud
 buzzing of the busy bees. They
 were coming in and out of a hollow
@@ -213,8 +216,8 @@ painful stings!
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,bn','bn,en,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and Bengali">bn</button>
+		<button onclick="switchlang('bn,en','bn,en,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and English">en</button>
 	</div>
 </div>
 
@@ -227,10 +230,10 @@ painful stings!
 	যখন মৌমাছিরা বেরিয়ে গেল, তখন গিংগিলে তার হাত মৌচাকে ঢুকিয়ে দিল। সে হাত ভর্তি করে ভারী চাক নিল, যার থেকে টপটপ করে ঘন মধু আর চর্বিযুক্ত সাদা মৌকীট পড়ছিল। সে সাবধানে চাকগুলো তার কাঁধে বহন করা থলিতে রাখল, এবং গাছ বেঁয়ে নিচে নামতে শুরু করল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	যখন মৌমাছিরা বেরিয়ে গেল, তখন গিংগিলে তার হাত মৌচাকে ঢুকিয়ে দিল। সে হাত ভর্তি করে ভারী চাক নিল, যার থেকে টপটপ করে ঘন মধু আর চর্বিযুক্ত সাদা মৌকীট পড়ছিল। সে সাবধানে চাকগুলো তার কাঁধে বহন করা থলিতে রাখল, এবং গাছ বেঁয়ে নিচে নামতে শুরু করল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	When the bees were out, Gingile
 pushed his hands into the nest. He
 took out handfuls of the heavy
@@ -248,8 +251,8 @@ and started to climb down the tree.
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,bn','bn,en,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and Bengali">bn</button>
+		<button onclick="switchlang('bn,en','bn,en,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and English">en</button>
 	</div>
 </div>
 
@@ -262,10 +265,10 @@ and started to climb down the tree.
 	এনগেডে উৎসুকভাবে গিংগিলে কি করছিল তা পর্যবেক্ষণ করছিল। সে অপেক্ষায় ছিল যে গিংগিলে একটি বড় চাকের টুকরো হানিগাইডের প্রতি ধন্যবাদস্বরূপ রেখে যাবে। এনগেডে এক ডাল থেকে অন্য ডালে ফুরফুর করে উড়ে বেড়িয়ে জমির কাছাকাছি আসছিল। অবশেষে গিংগিলে গাছের নিচে পৌঁছাল। এনগেডে ছেলেটির কাছে একটি পাথরের উপর উড়ে এসে বসল এবং তার পুরস্কারের জন্য অপেক্ষা করল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	এনগেডে উৎসুকভাবে গিংগিলে কি করছিল তা পর্যবেক্ষণ করছিল। সে অপেক্ষায় ছিল যে গিংগিলে একটি বড় চাকের টুকরো হানিগাইডের প্রতি ধন্যবাদস্বরূপ রেখে যাবে। এনগেডে এক ডাল থেকে অন্য ডালে ফুরফুর করে উড়ে বেড়িয়ে জমির কাছাকাছি আসছিল। অবশেষে গিংগিলে গাছের নিচে পৌঁছাল। এনগেডে ছেলেটির কাছে একটি পাথরের উপর উড়ে এসে বসল এবং তার পুরস্কারের জন্য অপেক্ষা করল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Ngede eagerly watched everything
 that Gingile was doing. He was
 waiting for him to leave a fat piece
@@ -286,8 +289,8 @@ boy and waited for his reward.
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,bn','bn,en,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and Bengali">bn</button>
+		<button onclick="switchlang('bn,en','bn,en,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and English">en</button>
 	</div>
 </div>
 
@@ -300,10 +303,10 @@ boy and waited for his reward.
 	কিন্তু গিংগিলে আগুন নেভাল, নিজের বর্শাটি তুলল এবং পাখিকে না দেখার ভান করে বাড়ির দিকে হাঁটা শুরু করল। এনগেডে রেগে ডাক দিল, "আমার মধু দাও! আমার মধু দাও!" গিংগিলে থামল, ছোট পাখির দিকে তাকাল আর অট্টহাসি দিল। "তুমি কিছু মধু চাও, চাও কি, আমার বন্ধু? হাঁ! কিন্তু আমি সব কাজ করেছি আর সব হুলের কামড় খেয়েছি। আমি কেন তোমাকে এই মজাদার মধুর ভাগ দিব?" তারপর সে হেঁটে চলে গেল। এনগেডে ক্রুদ্ধ হল! এটি তার সাথে করার মত কোন আচরণ হল না! কিন্তু সে এর প্রতিশোধ নিবে।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	কিন্তু গিংগিলে আগুন নেভাল, নিজের বর্শাটি তুলল এবং পাখিকে না দেখার ভান করে বাড়ির দিকে হাঁটা শুরু করল। এনগেডে রেগে ডাক দিল, "আমার মধু দাও! আমার মধু দাও!" গিংগিলে থামল, ছোট পাখির দিকে তাকাল আর অট্টহাসি দিল। "তুমি কিছু মধু চাও, চাও কি, আমার বন্ধু? হাঁ! কিন্তু আমি সব কাজ করেছি আর সব হুলের কামড় খেয়েছি। আমি কেন তোমাকে এই মজাদার মধুর ভাগ দিব?" তারপর সে হেঁটে চলে গেল। এনগেডে ক্রুদ্ধ হল! এটি তার সাথে করার মত কোন আচরণ হল না! কিন্তু সে এর প্রতিশোধ নিবে।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	But, Gingile put out the fire, picked up his spear and started
 walking home, ignoring the bird.
 Ngede called out angrily, "VIC-torr! VIC-torrr!"
@@ -322,8 +325,8 @@ his revenge.
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,bn','bn,en,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and Bengali">bn</button>
+		<button onclick="switchlang('bn,en','bn,en,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and English">en</button>
 	</div>
 </div>
 
@@ -336,10 +339,10 @@ his revenge.
 	একদিন বেশ কয়েক সপ্তাহ পরে গিংগিলে আবার এনগেডের ডাক শুনতে পায়। সে সুস্বাদু মধুর কথা স্মরণ করে এবং উৎসুকভাবে পাখিকে আবারও অনুসরণ করে। বনটির প্রান্ত বরাবর গিংগিলেকে নিয়ে যাওয়ার পর, এনগেডে একটি বড় আম্ব্রেল্লা থর্ণের (এক প্রকার বাবলা গাছ) উপর বিশ্রাম নিতে বসল। "আহ," গিংগিলে ভাবল। "মৌচাক নিশ্চয়ই এই গাছেই আছে।" সে দ্রুত আগুন ধরাল আর ধোঁয়া ধরা লাঠি দাঁতে ধরে গাছ বেঁয়ে উঠতে শুরু করল। এনগেডে বসে বসে দেখল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	একদিন বেশ কয়েক সপ্তাহ পরে গিংগিলে আবার এনগেডের ডাক শুনতে পায়। সে সুস্বাদু মধুর কথা স্মরণ করে এবং উৎসুকভাবে পাখিকে আবারও অনুসরণ করে। বনটির প্রান্ত বরাবর গিংগিলেকে নিয়ে যাওয়ার পর, এনগেডে একটি বড় আম্ব্রেল্লা থর্ণের (এক প্রকার বাবলা গাছ) উপর বিশ্রাম নিতে বসল। "আহ," গিংগিলে ভাবল। "মৌচাক নিশ্চয়ই এই গাছেই আছে।" সে দ্রুত আগুন ধরাল আর ধোঁয়া ধরা লাঠি দাঁতে ধরে গাছ বেঁয়ে উঠতে শুরু করল। এনগেডে বসে বসে দেখল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	One day several weeks later Gingile again heard the honey call of Ngede. He remembered the delicious honey, and eagerly
 followed the bird once again.
 After leading Gingile along the edge of the forest, Ngede stopped
@@ -356,8 +359,8 @@ watched.
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,bn','bn,en,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and Bengali">bn</button>
+		<button onclick="switchlang('bn,en','bn,en,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and English">en</button>
 	</div>
 </div>
 
@@ -370,10 +373,10 @@ watched.
 	গিংগিলে গাছে চড়ছিল আর অবাক হয়ে ভাবছিল যে কেন সে সবসময়ের মত গুঞ্জন শুনতে পাচ্ছেনা। "হয়ত মৌচাক গাছের অনেক ভিতরে," সে মনে মনে ভাবল। সে আরও একটি শাখায় চড়ল। কিন্তু মৌচাকের বদলে সে একটি চিতাবাঘের মুখোমুখি হল! চিতা তার ঘুম এত রূঢ়ভাবে বিঘ্নিত হওয়ার কারণে অনেক রেগে গেল। চিতা তার চোখ সংকুচিত করে মুখ খুলে তার বড় বড় তীক্ষ্ণ দাঁত দেখাল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	গিংগিলে গাছে চড়ছিল আর অবাক হয়ে ভাবছিল যে কেন সে সবসময়ের মত গুঞ্জন শুনতে পাচ্ছেনা। "হয়ত মৌচাক গাছের অনেক ভিতরে," সে মনে মনে ভাবল। সে আরও একটি শাখায় চড়ল। কিন্তু মৌচাকের বদলে সে একটি চিতাবাঘের মুখোমুখি হল! চিতা তার ঘুম এত রূঢ়ভাবে বিঘ্নিত হওয়ার কারণে অনেক রেগে গেল। চিতা তার চোখ সংকুচিত করে মুখ খুলে তার বড় বড় তীক্ষ্ণ দাঁত দেখাল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Gingile climbed, wondering why he didn't hear the usual buzzing.
 "Perhaps the hive is deep in the tree," he thought to himself.
 He pulled himself up another branch. But instead of the hive, he
@@ -390,8 +393,8 @@ and very sharp teeth.
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,bn','bn,en,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and Bengali">bn</button>
+		<button onclick="switchlang('bn,en','bn,en,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and English">en</button>
 	</div>
 </div>
 
@@ -404,10 +407,10 @@ and very sharp teeth.
 	চিতা গিংগিলেকে স্পর্শ করার পূর্বেই, সে তড়িঘড়ি করে গাছের নিচে নামতে থাকল। তাড়াহুড়োর মাঝে সে একটি ডালে পা রাখতে ভুলে গেল আর মাটিতে ধড়াস্ করে পড়ল। তার গোড়ালি মচকে গেল। সে যথাসম্ভব দ্রুত লেংচিয়ে লেংচিয়ে দৌড়ে গেল। সৌভাগ্যবশত চিতা তখনও নিদ্রালু থাকার কারণে তাকে ধাওয়া করতে পারেনি। হানিগাইড পাখি এনগেডে তার প্রতিশোধ নিল। আর গিংগিলে শিক্ষা পেল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	চিতা গিংগিলেকে স্পর্শ করার পূর্বেই, সে তড়িঘড়ি করে গাছের নিচে নামতে থাকল। তাড়াহুড়োর মাঝে সে একটি ডালে পা রাখতে ভুলে গেল আর মাটিতে ধড়াস্ করে পড়ল। তার গোড়ালি মচকে গেল। সে যথাসম্ভব দ্রুত লেংচিয়ে লেংচিয়ে দৌড়ে গেল। সৌভাগ্যবশত চিতা তখনও নিদ্রালু থাকার কারণে তাকে ধাওয়া করতে পারেনি। হানিগাইড পাখি এনগেডে তার প্রতিশোধ নিল। আর গিংগিলে শিক্ষা পেল।
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Before Leopard could take a swipe at Gingile, he rushed down the
 tree.
 In his hurry he missed a branch, and landed with a heavy thud on
@@ -424,8 +427,8 @@ And Gingile learned his lesson.
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,bn','bn,en,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and Bengali">bn</button>
+		<button onclick="switchlang('bn,en','bn,en,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and English">en</button>
 	</div>
 </div>
 
@@ -438,10 +441,10 @@ And Gingile learned his lesson.
 	আর তাই, যখন গিংগিলের সন্তানরা এনগেডের গল্প শুনে, তখন তারা ছোট পাখিটির সম্মান করে। যখনই তারা মধু সংগ্রহ করে, তারা খেয়াল রাখে যেন তারা মৌচাকের সবচেয়ে বড় অংশ হানিগাইড পাখির জন্য রেখে যায়!
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt bn"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	আর তাই, যখন গিংগিলের সন্তানরা এনগেডের গল্প শুনে, তখন তারা ছোট পাখিটির সম্মান করে। যখনই তারা মধু সংগ্রহ করে, তারা খেয়াল রাখে যেন তারা মৌচাকের সবচেয়ে বড় অংশ হানিগাইড পাখির জন্য রেখে যায়!
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	And so, when the children of Gingile
 hear the story of Ngede they have
 respect for the little bird.
@@ -457,8 +460,8 @@ of the comb for Honeyguide!
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('bn','bn')" class="btn btn-lg lang-bn" title="Switch between Bengali and Bengali">bn</button>
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,bn','bn,en,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and Bengali">bn</button>
+		<button onclick="switchlang('bn,en','bn,en,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and English">en</button>
 	</div>
 </div>
 
