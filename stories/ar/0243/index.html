@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/storybooks-bangladesh/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-bangladesh/stories/ar/0243/">
 	<link rel="alternate" type="application/rss+xml" title="Storybooks Bangladesh" href="/storybooks-bangladesh">
-	<script src="/storybooks-bangladesh/js/sbc.js"></script>
+	<script src="/storybooks-bangladesh/js/sbc.min.js"></script>
 </head>
 
 
@@ -49,7 +49,8 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg" href="https://storybookscanada.ca/pdf/ar/ar-0243_holidays.pdf" target="_blank">Download PDF</a></div> 
+        <div class="float-right"><span class="tooltip tooltip-left" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled" href="https://storybookscanada.ca/pdf/ar/ar-0243_holidays.pdf" target="_blank">Download PDF</a></span>
+</div> 
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
@@ -74,16 +75,20 @@
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/ar/0243/mp3/01.mp3"></audio>
 			<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 			<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 		</div>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon cover-icon-text" src="/storybooks-bangladesh/css/pencil.svg" alt="Written by"></span> Violet Otieno</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon cover-icon-text" src="/storybooks-bangladesh/css/art.svg" alt="Illustrated by"></span> Catherine Groenewald</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon cover-icon-text" src="/storybooks-bangladesh/css/global.svg" alt="Translated by"></span> Maaouia Haj Mabrouk</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon cover-icon-text" src="/storybooks-bangladesh/css/megaphone.svg" alt="Read by"></span> Mashael Muhanna</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-bangladesh/css/language.svg" alt="Language"></span> <a href="/storybooks-bangladesh/stories/ar">Arabic</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-bangladesh/css/level.svg" alt="Level"></span> <a href="/storybooks-bangladesh/stories/ar/level4">Level 4</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-bangladesh/css/level.svg" alt="Level"></span> <a href="/storybooks-bangladesh/stories/ar/level4">Level 4
+</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-audio" src="/storybooks-bangladesh/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/ar/0243/ar-0243_holidays.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Reading speed"><img class="cover-icon cover-icon-text" src="/storybooks-bangladesh/css/speedometer.svg" alt="Reading speed" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Reading speed: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/storybooks-bangladesh/css/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -111,7 +116,9 @@ They looked forward to the holidays. Not just because school was closed, but bec
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -141,7 +148,9 @@ The night before, they packed their bags and got ready for the long journey to h
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -171,7 +180,9 @@ They drove past mountains, wild animals and tea plantations. They counted cars a
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -199,7 +210,9 @@ They drove past mountains, wild animals and tea plantations. They counted cars a
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -231,7 +244,9 @@ Nyar-Kanyada in Luo, means ‘daughter of the people of Kanyada’. She was a st
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -265,7 +280,9 @@ Her grandchildren were excited to give her the presents they brought from the ci
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -293,7 +310,9 @@ Her grandchildren were excited to give her the presents they brought from the ci
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -321,7 +340,9 @@ Her grandchildren were excited to give her the presents they brought from the ci
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -349,7 +370,9 @@ Her grandchildren were excited to give her the presents they brought from the ci
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -377,7 +400,9 @@ Her grandchildren were excited to give her the presents they brought from the ci
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -405,7 +430,9 @@ Her grandchildren were excited to give her the presents they brought from the ci
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -433,7 +460,9 @@ Her grandchildren were excited to give her the presents they brought from the ci
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -461,7 +490,9 @@ Her grandchildren were excited to give her the presents they brought from the ci
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -491,7 +522,9 @@ The farmer was angry with Odongo. He threatened to keep the cows for eating his 
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -521,7 +554,9 @@ Apiyo liked to tell customers the price of items. Odongo would pack the items th
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -549,7 +584,9 @@ Apiyo liked to tell customers the price of items. Odongo would pack the items th
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -579,7 +616,9 @@ Nyar-Kanyada gave Odongo a cap and Apiyo a sweater. She packed food for their jo
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -609,7 +648,9 @@ She smiled and said, “I am too old for the city. I will be waiting for you to 
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -637,7 +678,9 @@ She smiled and said, “I am too old for the city. I will be waiting for you to 
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -662,12 +705,14 @@ But most of all, everyone agreed that Odongo and Apiyo had a wonderful grandmoth
 	<div class="btn-group switcher-group">
 		<a href="#text20" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Story credits"><i class="icon-arrow-down"></i></a>
-		<audio id="audio21" src="https://globalstorybooks.net/media/ar/0243/mp3/21.mp3"></audio>
+		<audio id="audio21" src="https://globalstorybooks.net/media/audio/ar/0243/mp3/21.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton21" onclick="playpause('21')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ar,bn','bn,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Bengali">bn</button>
+
 		<button onclick="switchlang('ar,en','bn,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
+
 	</div>
 </div>
 
@@ -676,19 +721,23 @@ But most of all, everyone agreed that Odongo and Apiyo had a wonderful grandmoth
 
 <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Written by: Violet Otieno</h5>
-		<h5>Illustrated by: Catherine Groenewald</h5>
-		<h5>Translated by: Maaouia Haj Mabrouk</h5>
-		<h5>Read by: Mashael Muhanna</h5>
-		<h5>Language: <a href="/storybooks-bangladesh/stories/ar">Arabic</a></h5>
-		<h5><a href="/storybooks-bangladesh/stories/ar/level4">Level 4</a></h5>
-		<h5>Source: <a href="https://africanstorybook.org/reader.php?id=12084" target="_blank">Holidays with grandmother</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Written by:</span> Violet Otieno</h5>
+		<h5><span class="colophon-heading">Illustrated by:</span> Catherine Groenewald</h5>
+		<h5><span class="colophon-heading">Translated by:</span> Maaouia Haj Mabrouk</h5>
+		<h5><span class="colophon-heading">Read by:</span> Mashael Muhanna</h5>
+		<h5><span class="colophon-heading">Language:</span> <a href="/storybooks-bangladesh/stories/ar">Arabic</a></h5>
+		<h5><span class="colophon-heading">Level:</span> <a href="/storybooks-bangladesh/stories/ar/level4">Level 4
+</a></h5>
+		<h5><span class="colophon-heading">Source:</span> <a href="https://africanstorybook.org/reader.php?id=12084" target="_blank">Holidays with grandmother</a> from <a href="https://africanstorybook.org/">African Storybook</a>
+</h5>
 
-		<div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</div>
+		<div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+</div>
 
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
-		<h5>Read more <a href="/storybooks-bangladesh/stories/ar/level4">level 4</a> stories:</h5>
+		<h5>Read more <a href="/storybooks-bangladesh/stories/ar/level4">level 4</a> stories:
+</h5>
 			<label class="chip"><a href="/storybooks-bangladesh/stories/ar/0072/">انتقام طائر دليل المناحل</a></label>
 			<label class="chip"><a href="/storybooks-bangladesh/stories/ar/0291/">ما قالته أخت فوسي</a></label>
 			<label class="chip"><a href="/storybooks-bangladesh/stories/ar/0294/">موز جدتي</a></label>
@@ -696,7 +745,8 @@ But most of all, everyone agreed that Odongo and Apiyo had a wonderful grandmoth
 </div>
 <div>
 <h5>Options</h5>
-	<a class="btn btn-lg" href="/storybooks-bangladesh/stories/ar" class="button">Back to stories list</a> <a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a>
+	<a class="btn btn-lg" href="/storybooks-bangladesh/stories/ar" class="button">Back to stories list</a> <span class="tooltip tooltip-top" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled" href="https://storybookscanada.ca/pdf/ar/ar-0243_holidays.pdf" target="_blank">Download PDF</a></span>
+
 <br><br>
 </div>
 
